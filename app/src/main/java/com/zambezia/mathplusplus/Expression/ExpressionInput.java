@@ -29,6 +29,11 @@ public class ExpressionInput {
 		CalcDebug.Debug("s=" + s);
 		this.output += s;
 	}
+
+	public void prepend(String s) {
+		CalcDebug.Debug("s=" + s);
+		this.output = s+ this.output;
+	}
 	
 	public void clear() {
 		CalcDebug.Debug("clear");

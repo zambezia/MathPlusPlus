@@ -10,6 +10,8 @@ public interface IView {
 	
 	public void displayExpression(String expression);
 	public void displayOutput(String result);
+	public String getDisplayOutputString();
+	public double getDisplayOutputDouble();
 	public void displayModeStatus(String status);
 	public void displayTrigonometricMode(String mode);
 }

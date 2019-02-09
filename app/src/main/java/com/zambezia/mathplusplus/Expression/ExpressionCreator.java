@@ -39,8 +39,29 @@ public class ExpressionCreator {
 		
 		this.exprList.add(t);
 	}
-	
-	
+
+	public void appendTokens(String t) {
+		CalcDebug.Debug("t=" + t);
+		if (t == "."){
+			handlePoint();
+			return;
+		}
+		char[] arr = t.toCharArray();
+		for(int i=0;i<arr.length;i++)
+			this.exprList.add(Character.toString(arr[i]));
+	}
+
+	public void prependTokens(String t) {
+		CalcDebug.Debug("t=" + t);
+		if (t == "."){
+			handlePoint();
+			return;
+		}
+		char[] arr = t.toCharArray();
+		for(int i=0;i<arr.length;i++)
+			this.exprList.add(i,Character.toString(arr[i]));
+	}
+
 	public ExpressionCreator(Calculator _calcualtor) {
 		this.calculator = _calcualtor;
 		this.exprList = new ArrayList<String>();

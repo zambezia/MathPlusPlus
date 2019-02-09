@@ -17,4 +17,11 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="SimpleButton">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">@dimen/primary_button_size_width_simple</item>
+        <item name="android:layout_height">@dimen/primary_button_size_height_simple</item>
+        <item name="android:textSize">@dimen/primary_button_text_size_simple</item>
+    </style>
+
 </resources>

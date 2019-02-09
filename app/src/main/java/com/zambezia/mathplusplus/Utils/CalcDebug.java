@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Stack;
 
 import android.util.Log;
+import android.util.Pair;
 
 public class CalcDebug {
 
@@ -78,6 +79,21 @@ public class CalcDebug {
 	{
 		printArray("", notations);
 	}
+
+	public static void printArray(Pair<String,Integer>[] notations)
+	{
+		printArray("", notations);
+	}
+
+	public static void printArray(String arrayName, Pair<String,Integer>[] notations)
+	{
+		String val = "";
+		val += arrayName;
+		for (Pair<String,Integer> item : notations) {
+			val += item.first + " ";
+		}
+		Debug("val = " + val);
+	}
 	
 	public static void printArray(String arrayName, String[] notations)
 	{
@@ -93,6 +109,8 @@ public class CalcDebug {
 	{
 		printStack("", notations);
 	}
+
+
 
 	public static void printStack(String stackName, Stack<String> notations)
 	{

@@ -127,10 +127,10 @@ public class CalculatorBrain {
 	    double val = 0.0;
 	    
 	    if (getMode() == Mode.DEGREES)
-		arg0 = Math.toRadians(arg0);
+			val = Math.toRadians(arg0);
 	    else if (getMode() == Mode.GRADIAN)
-		arg0 = Math.PI * arg0 / 200;
-	    
+			val = Math.PI * arg0 / 200;
+
 	    return val;
 	}
 	

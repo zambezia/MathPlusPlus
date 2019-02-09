@@ -1,3 +1,36 @@
+//package com.zambezia.mathplusplus.Views;
+//
+//import android.os.Bundle;
+//import android.support.design.widget.FloatingActionButton;
+//import android.support.design.widget.Snackbar;
+//import android.support.v7.app.AppCompatActivity;
+//import android.support.v7.widget.Toolbar;
+//import android.view.View;
+//
+//import com.zambezia.mathplusplus.R;
+//
+//public class SimpleActivity extends AppCompatActivity {
+//
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_simple);
+//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+//
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
+//    }
+//
+//}
+
+
 package com.zambezia.mathplusplus.Views;
 
 import android.os.Bundle;
@@ -25,15 +58,11 @@ import com.zambezia.mathplusplus.R;
  * @since 4/19/2013
  *
  */
-public class MainActivity extends AppCompatActivity
+public class SimpleActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, IView {
 
-    private Button one, two, three, four, five, six, seven, eight, nine, zero, plus, minus, div, mul, equal, leftparentheses, rightparentheses, square, cube, squareRoot, ac,
-            point, sin, cos, tan, log, ln, secondfun, alpha, hyp, pow, negation, exp;
-    private Button trigMode;
-    private Button store;
-    private Button recall;
-    private Button memory;
+    private Button one, two, three, four, five, six, seven, eight, nine, zero, plus, minus, div, mul, equal, leftparentheses, rightparentheses, ac,
+            point;
 
     private TextView input, output, modeview, trigonoModeView;
     private Calculator calculator;
@@ -47,7 +76,6 @@ public class MainActivity extends AppCompatActivity
         {
             Button b = (Button) arg0;
             String func = getCommand(b);
-
             calculator.commandHanlder(func);
         }
     };
@@ -55,7 +83,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_simple);
         //Calculator instance and UI code hooking
         init();
         SetListeners();
@@ -161,34 +189,14 @@ public class MainActivity extends AppCompatActivity
         minus = (Button) findViewById(R.id.buttonMinus);
         mul = (Button) findViewById(R.id.buttonMul);
         div = (Button) findViewById(R.id.buttonDiv);
-        negation = (Button) findViewById(R.id.buttonNegation);
         equal = (Button) findViewById(R.id.buttonEqual);
         leftparentheses = (Button) findViewById(R.id.buttonLeftparentheses);
         rightparentheses = (Button) findViewById(R.id.buttonRightparentheses);
-        square = (Button) findViewById(R.id.buttonSquare);
-        squareRoot = (Button) findViewById(R.id.buttonSquareRoot);
-        cube = (Button) findViewById(R.id.buttonCube);
         ac = (Button) findViewById(R.id.buttonClear);
-        sin = (Button) findViewById(R.id.buttonSin);
-        cos = (Button) findViewById(R.id.buttonCos);
-        tan = (Button) findViewById(R.id.buttontan);
-        sin = (Button) findViewById(R.id.buttonSin);
-        log = (Button) findViewById(R.id.buttonLog);
-        ln = (Button) findViewById(R.id.buttonLn);
-        secondfun = (Button) findViewById(R.id.buttonSecondfun);
-        alpha = (Button) findViewById(R.id.buttonAlpha);
-        hyp = (Button) findViewById(R.id.buttonHp);
-        pow = (Button) findViewById(R.id.buttonPow);
-        exp = (Button) findViewById(R.id.buttonEXP);
-        store = (Button) findViewById(R.id.buttonStore);
-        recall = (Button) findViewById(R.id.buttonRecall);
-        memory = (Button) findViewById(R.id.buttonMemory);
-        trigMode = (Button) findViewById(R.id.buttonTrigMode);
 
         input = (TextView) findViewById(R.id.modeTextView);
-        output = (TextView) findViewById(R.id.consoleTextView);
         modeview = (TextView) findViewById(R.id.statusMemoryView);
-        trigonoModeView = (TextView)findViewById(R.id.trigonoModeView);
+        output = (TextView) findViewById(R.id.consoleTextView);
 
     }
 
@@ -220,19 +228,8 @@ public class MainActivity extends AppCompatActivity
         minus.setOnClickListener(handler1_OnClickListener);
         mul.setOnClickListener(handler1_OnClickListener);
         div.setOnClickListener(handler1_OnClickListener);
-        negation.setOnClickListener(handler1_OnClickListener);
         leftparentheses.setOnClickListener(handler1_OnClickListener);
         rightparentheses.setOnClickListener(handler1_OnClickListener);
-        pow.setOnClickListener(handler1_OnClickListener );
-        squareRoot.setOnClickListener(handler1_OnClickListener);
-        square.setOnClickListener(handler1_OnClickListener);
-        cube.setOnClickListener(handler1_OnClickListener);
-        log.setOnClickListener(handler1_OnClickListener);
-        ln.setOnClickListener(handler1_OnClickListener);
-        sin.setOnClickListener(handler1_OnClickListener);
-        cos.setOnClickListener(handler1_OnClickListener);
-        tan.setOnClickListener(handler1_OnClickListener);
-        exp.setOnClickListener(handler1_OnClickListener);
 
         point.setOnClickListener(new View.OnClickListener()
         {
@@ -271,86 +268,6 @@ public class MainActivity extends AppCompatActivity
 
         });
 
-        secondfun.setOnClickListener(new View.OnClickListener()
-        {
-
-            @Override
-            public void onClick(View arg0)
-            {
-                calculator.setInputMode(Calculator.InputMode.SHIFT);
-                calculator.getModeviewText();
-            }
-        });
-
-        alpha.setOnClickListener(new View.OnClickListener()
-        {
-
-            @Override
-            public void onClick(View arg0)
-            {
-                calculator.setInputMode(Calculator.InputMode.ALPHA);
-            }
-        });
-
-        hyp.setOnClickListener(new View.OnClickListener()
-        {
-
-            @Override
-            public void onClick(View arg0)
-            {
-                calculator.setHypEnabled(true);
-            }
-
-        });
-
-        recall.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                if (calculator.getMemoryInputMode() == Calculator.MemoryInputMode.RECALL ||
-                        calculator.getMemoryInputMode() == Calculator.MemoryInputMode.STORE)
-                {
-                    calculator.commandHanlder(CalculatorConstants.RCL);
-                    calculator.clearMemoryInputMode();
-                    return;
-                }
-                calculator.setMemoryInputMode(Calculator.MemoryInputMode.RECALL);
-            }
-        });
-
-        store.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                if (calculator.getMemoryInputMode() == Calculator.MemoryInputMode.RECALL ||
-                        calculator.getMemoryInputMode() == Calculator.MemoryInputMode.STORE)
-                {
-                    calculator.commandHanlder(CalculatorConstants.STO);
-                    calculator.clearMemoryInputMode();
-                    return;
-                }
-                calculator.setMemoryInputMode(Calculator.MemoryInputMode.STORE);
-            }
-        });
-
-        memory.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View arg0) {
-                calculator.commandHanlder(CalculatorConstants.MEM_ADD);
-                calculator.clearMemoryInputMode();
-                return;
-            }
-        });
-
-        trigMode.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View arg0)
-            {
-                calculator.toggleTrigonoMode();
-            }
-        });
     }
 
     private String getCommand(Button b)
@@ -394,6 +311,7 @@ public class MainActivity extends AppCompatActivity
         }
         return val;
     }
+
     @Override
     public void displayModeStatus(String status) {
         this.modeview.setText(status);

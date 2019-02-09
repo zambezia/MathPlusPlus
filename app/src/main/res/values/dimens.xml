@@ -15,6 +15,10 @@
     <dimen name="primary_textview_text_size">10dip</dimen>
     <dimen name="primary_textview_size_height">13dip</dimen>
     <dimen name="primary_button_text_size">14dip</dimen>
+    <dimen name="primary_button_text_size_simple">20dip</dimen>
     <dimen name="primary_button_size_height">40dip</dimen>
     <dimen name="primary_button_size_width">58dip</dimen>
+    <dimen name="primary_button_size_height_simple">70dip</dimen>
+    <dimen name="primary_button_size_width_simple">70dip</dimen>
+
 </resources>

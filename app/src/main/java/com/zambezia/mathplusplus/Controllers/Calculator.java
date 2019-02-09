@@ -1,6 +1,8 @@
 package com.zambezia.mathplusplus.Controllers;
 
 import com.zambezia.mathplusplus.Models.ButtonModeValues;
+import com.zambezia.mathplusplus.Models.Operator;
+import com.zambezia.mathplusplus.Models.OperatorList;
 import com.zambezia.mathplusplus.Utils.CalcDebug;
 import com.zambezia.mathplusplus.Utils.CalculatorBrain;
 import com.zambezia.mathplusplus.Defs.CalculatorConstants;
@@ -17,7 +19,8 @@ import com.zambezia.mathplusplus.Views.IView;
  *
  */
 public class Calculator {
-	
+
+	public double result=0.0;
 	public enum InputMode{ SHIFT, ALPHA, NORMAL };
 	public enum MemoryInputMode{RECALL, STORE, NORMAL};
 	
@@ -174,8 +177,31 @@ public class Calculator {
 	}
 	
 	public void addToExpression(String s) {
-		this.expCreator.addToken(s);
-		
+		boolean isExpressionAppended =false;
+		//append last valid result if it is the start of a new input expression and the entry is an operator
+		if(this.expCreator.getExprList().size() == 0) {
+			if( OperatorList.isOperator(s)) {
+				double oldResult = calcView.getDisplayOutputDouble();
+				// not zero means there is some valid value in output that needs to be added
+				if (oldResult != 0.0) {
+					//check for unary and in that case prepend the operator
+					if(OperatorList.getOperatorType(s) != Operator.OperatorType.UNARY)
+					{
+						this.expCreator.appendTokens(calcView.getDisplayOutputString());
+						this.expCreator.addToken(s);
+					}
+					else
+					{
+						this.expCreator.addToken(s);
+						this.expCreator.appendTokens(calcView.getDisplayOutputString());
+					}
+					isExpressionAppended =true;
+					calcView.displayOutput("0.");
+				}
+			}
+		}
+		if(!isExpressionAppended)
+			this.expCreator.addToken(s);
 	}
 	
 	/**
@@ -186,7 +212,26 @@ public class Calculator {
 	}
 	
 	public void appendMath(String s) {
-		this.mathexp.append(s);
+		boolean isExpressionAppended =false;
+		//append last valid result if it is the start of a new input expression and the entry is an operator
+		if(this.mathexp.getOutput() == "" && OperatorList.isOperator(s)) {
+			double oldResult = calcView.getDisplayOutputDouble();
+			// not zero means there is some valid value in output that needs to be added
+			if (oldResult != 0.0) {
+				//check for unary and in that case prepend the operator
+				if(OperatorList.getOperatorType(s) != Operator.OperatorType.UNARY) {
+					this.mathexp.append(calcView.getDisplayOutputString());
+					this.mathexp.append(s);
+				}
+				else {
+					this.mathexp.append(s);
+					this.mathexp.append(calcView.getDisplayOutputString());
+				}
+				isExpressionAppended = true;
+			}
+		}
+		if(!isExpressionAppended)
+			this.mathexp.append(s);
 		calcView.displayExpression(this.mathexp.getOutput());
 	}
 	
@@ -200,18 +245,16 @@ public class Calculator {
 	public double solveExpression(String outMessage)
 	{
 		double dval = 0.0;
-		dval = expEval.solve(this.expCreator.getExprList());
-		this.appendMath(outMessage);
-		calcView.displayOutput(Double.toString(dval));
-		calculationDone = true;
+		result = dval = expEval.solve(this.expCreator.getExprList());
+        this.appendMath(outMessage);
+        calcView.displayOutput(Double.toString(dval));
+        calculationDone = true;
 		return dval;
 	}
 	
 	private void resetSpecialFunctions()
 	{
 		this.clearInputMode();
-		this.setHypEnabled(false);
-		this.clearMemoryInputMode();
 		this.calcView.displayModeStatus(this.getModeviewText());
 	}
 	
@@ -224,7 +267,7 @@ public class Calculator {
 	{
 		this.clearMath();
 		this.clearExpression();
-		calcView.displayOutput("0.");
+		//calcView.displayOutput("0.");
 		calcView.displayExpression("");
 		resetSpecialFunctions();
 		calculationDone = false;

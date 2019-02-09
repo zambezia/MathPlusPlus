@@ -1,5 +1,7 @@
 package com.zambezia.mathplusplus.Expression;
 
+import android.util.Pair;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -30,7 +32,7 @@ public class ExpressionEval {
 	 * The calculated expression frim infix notation. this expression will be
 	 * used to evaluate and output the calculation result.
 	 */
-	private String[] postfixExpression;
+	private Pair<String,Integer>[] postfixExpression;
 	private double answer = 0.0;
 	public double getAnswer() {
 		return answer;
@@ -161,12 +163,11 @@ public class ExpressionEval {
 
 		}
 
-		postfixExpression = new String[postFixNotation.size()];
+		postfixExpression = new Pair[postFixNotation.size()];
 		int index = 0;
 		for (String elem : postFixNotation) {
 
-			postfixExpression[index++] = elem;
-
+			postfixExpression[index++] = new Pair(elem,index);
 		}
 
 		return val;
@@ -188,19 +189,22 @@ public class ExpressionEval {
 	    
 	    if (expression == null || expression.length <= 0)
 		return "";
-	    
-	    Stack<String> stack = new Stack<String>();
-	    ArrayList<String> exp = new ArrayList<String>();
-	    
-	    for (String token : expression)
+
+
+	    Stack<Pair<String,Integer>> stack = new Stack<Pair<String,Integer>>();
+	    ArrayList<Pair<String,Integer>> exp = new ArrayList<Pair<String,Integer>>();
+
+		Pair<String,Integer> token=null;
+	    for (int index=0;index< expression.length ;index++)
 	    {
-		if (OperatorList.isOperator(token))
+			token = new Pair<String,Integer>(expression[index],index);
+		if (OperatorList.isOperator(token.first))
 		{
-		    Operator o1 = OperatorList.getOperator(token);
+		    Operator o1 = OperatorList.getOperator(token.first);
 		    Operator o2 = null;
-		    while (!stack.empty() && OperatorList.isOperator(stack.peek()))
+		    while (!stack.empty() && OperatorList.isOperator(stack.peek().first))
 		    {
-			o2 = OperatorList.getOperator(stack.peek());
+			o2 = OperatorList.getOperator(stack.peek().first);
 			if (	(o1.getAssociativity() == Associativity.LEFT && o1.compare2(o2) <= 0 )
 				|| (o1.getAssociativity() == Associativity.RIGHT && o1.compare2(o2) < 0)
 				)
@@ -212,13 +216,13 @@ public class ExpressionEval {
 		    }
 		    stack.push(token);
 		}
-		else if(OperatorList.isLeftParenthesis(token))
+		else if(OperatorList.isLeftParenthesis(token.first))
 		{
 		    stack.push(token);
 		}
-		else if (OperatorList.isRightParentheis(token))
+		else if (OperatorList.isRightParentheis(token.first))
 		{
-		    while(!OperatorList.isLeftParenthesis(stack.peek()))
+		    while(!OperatorList.isLeftParenthesis(stack.peek().first))
 		    {
 			if (stack.empty())
 			{
@@ -239,22 +243,23 @@ public class ExpressionEval {
 	    //Moving remaining operators from stack to output queue
 	    while(!stack.empty())
 	    {
-		String s = stack.pop();
-		if (OperatorList.isParanthesis(s))
+	    	token = stack.pop();
+		if (OperatorList.isParanthesis(token.first))
 		{
 		    this.error = Error.MISMATCHED_PARANTHESIS;
 		    return "";
 		}
-		exp.add(s);
+		exp.add(token);
 	    }
 	    
-	    postfixExpression = new String[exp.size()];
+	    postfixExpression = new Pair[exp.size()];
 	    int index = 0;
-	    for (String elem : exp) 
+	    for (Pair<String,Integer> elem : exp)
 	    {
-		postfixExpression[index++] = elem;
+			postfixExpression[index++] = elem;
 	    }
-	    
+
+
 	    CalcDebug.printArray(postfixExpression);
 	    
 	    return val;
@@ -268,43 +273,55 @@ public class ExpressionEval {
 		if (postfixExpression == null || postfixExpression.length <= 0)
 			return val;
 
-		Stack<String> operationStack = new Stack<String>();
+		Stack<Pair<String,Integer>> operationStack = new Stack<Pair<String,Integer>>();
 
 		CalcDebug.printArray(postfixExpression);
 
-		for (String elem : postfixExpression) {
+		Pair<String, Integer> pairOperandItem= null;
+		Integer smalIndex=-1;
+		for (Pair<String,Integer> elem : postfixExpression) {
 
 			CalcDebug.Debug("elem = " + elem);
 
-			if (!OperatorList.isOperator(elem)) {
-				operationStack.push(elem);
+				//operationStack.push(elem);
+				if (!OperatorList.isOperator(elem.first)) {
+					operationStack.push(elem);
 			} else {
 				double arg0 = 0.0;
 				double arg1 = 0.0;
 				double arg2 = 0.0;
 
-				OperatorType t = OperatorList.getOperatorType(elem);
+				OperatorType t = OperatorList.getOperatorType(elem.first);
 				if (t == OperatorType.BINARY) {
-					arg1 = Double.parseDouble(operationStack.pop());
-					arg0 = Double.parseDouble(operationStack.pop());
-					val = CalculatorBrain.performCalculation(elem, arg0, arg1);
-				} else if (t == OperatorType.UNARY) {
-					arg0 = Double.parseDouble(operationStack.pop());
-					val = CalculatorBrain.performCalculation(elem, arg0);
+					arg1 = Double.parseDouble(operationStack.pop().first);
+					pairOperandItem = operationStack.pop();
+					arg0 = Double.parseDouble(pairOperandItem.first);
+					smalIndex = pairOperandItem.second;
+					val = CalculatorBrain.performCalculation(elem.first, arg0, arg1);
+				} else if (t == OperatorType.UNARY)
+				{
+					pairOperandItem = operationStack.pop();
+					arg0 = Double.parseDouble(pairOperandItem.first);
+					if (pairOperandItem.second < elem.second)
+						arg0 = Double.parseDouble("Invalid expression");
+					smalIndex = pairOperandItem.second;
+					val = CalculatorBrain.performCalculation(elem.first, arg0);
 				} else if (t == OperatorType.TERNARY) {
-					arg2 = Double.parseDouble(operationStack.pop());
-					arg1 = Double.parseDouble(operationStack.pop());
-					arg0 = Double.parseDouble(operationStack.pop());
-					val = CalculatorBrain.performCalculation(elem, arg0, arg1,
+					arg2 = Double.parseDouble(operationStack.pop().first);
+					arg1 = Double.parseDouble(operationStack.pop().first);
+					pairOperandItem = operationStack.pop();
+					arg0 = Double.parseDouble(pairOperandItem.first);
+					smalIndex = pairOperandItem.second;
+					val = CalculatorBrain.performCalculation(elem.first, arg0, arg1,
 							arg2);
 				}
-				operationStack.push(Double.toString(val));
+				operationStack.push(new Pair<String, Integer>(Double.toString(val),smalIndex));
 			}
 
-			CalcDebug.printStack(operationStack);
+			//CalcDebug.printStack(operationStack);
 		}
 
-		val = Double.parseDouble(operationStack.pop());
+		val = Double.parseDouble(operationStack.pop().first);
 
 		CalcDebug.Debug("val = " + val);
 
@@ -312,10 +329,10 @@ public class ExpressionEval {
 	}
 
 	public double solve(List<String> expression) {
-		
+        double val=-1;
 		ExpressionFormater formatter = new ExpressionFormater();
 		this.infixToPostFix2(formatter.format(expression));
-		double val = this.evalutatExpression();
+		val = this.evalutatExpression();
 		return val;
 	}
 	
