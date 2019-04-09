@@ -245,10 +245,15 @@ public class Calculator {
 	public double solveExpression(String outMessage)
 	{
 		double dval = 0.0;
+		try{
 		result = dval = expEval.solve(this.expCreator.getExprList());
         this.appendMath(outMessage);
         calcView.displayOutput(Double.toString(dval));
         calculationDone = true;
+		} catch (Exception exp) {
+			calcView.displayOutput("Error");
+			return dval;
+		}
 		return dval;
 	}
 	
@@ -271,6 +276,11 @@ public class Calculator {
 		calcView.displayExpression("");
 		resetSpecialFunctions();
 		calculationDone = false;
+	}
+	public void newCalculationWithResetDisplayOutput()
+	{
+		newCalculation();
+		calcView.displayOutput("0.");
 	}
 	
 	public void commandHanlder(String func)

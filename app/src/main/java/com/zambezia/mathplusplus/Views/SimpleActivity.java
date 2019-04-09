@@ -1,38 +1,6 @@
-//package com.zambezia.mathplusplus.Views;
-//
-//import android.os.Bundle;
-//import android.support.design.widget.FloatingActionButton;
-//import android.support.design.widget.Snackbar;
-//import android.support.v7.app.AppCompatActivity;
-//import android.support.v7.widget.Toolbar;
-//import android.view.View;
-//
-//import com.zambezia.mathplusplus.R;
-//
-//public class SimpleActivity extends AppCompatActivity {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_simple);
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-//
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
-//    }
-//
-//}
-
-
 package com.zambezia.mathplusplus.Views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.view.View;
@@ -49,7 +17,9 @@ import android.widget.TextView;
 
 import com.zambezia.mathplusplus.Defs.CalculatorConstants;
 import com.zambezia.mathplusplus.Controllers.Calculator;
+import com.zambezia.mathplusplus.Enums;
 import com.zambezia.mathplusplus.R;
+import com.zambezia.mathplusplus.singleton.PreferenceHelperSingleton;
 
 /**
  * Main view of the app, hosts the calculator button commands and allow user to interact with Math
@@ -61,6 +31,7 @@ import com.zambezia.mathplusplus.R;
 public class SimpleActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, IView {
 
+    private DrawerLayout drawer;
     private Button one, two, three, four, five, six, seven, eight, nine, zero, plus, minus, div, mul, equal, leftparentheses, rightparentheses, ac,
             point;
 
@@ -90,7 +61,7 @@ public class SimpleActivity extends AppCompatActivity
         calculator = new Calculator(this);
 
         //Setting up toolbar
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_simple);
         setSupportActionBar(toolbar);
 
         //Setting up FloatingActionButton
@@ -104,7 +75,7 @@ public class SimpleActivity extends AppCompatActivity
         });
 
         //Setting up DrawerLayout and NavigationView
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout_simple);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
@@ -116,7 +87,6 @@ public class SimpleActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -127,7 +97,7 @@ public class SimpleActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.app_menu, menu);
         return true;
     }
 
@@ -142,6 +112,15 @@ public class SimpleActivity extends AppCompatActivity
         if (id == R.id.action_settings) {
             return true;
         }
+        else if (id == R.id.nav_simple_calculator) {
+            return true;
+        }
+        else if (id == R.id.nav_scientific_calculator) {
+            Intent intent = new Intent(this,ScientificActivity.class);
+            startActivity(intent);
+            finish();
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -152,7 +131,12 @@ public class SimpleActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_scientific_calculator){
+            Intent intent = new Intent(this,ScientificActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        else if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
 
@@ -166,7 +150,6 @@ public class SimpleActivity extends AppCompatActivity
 
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
@@ -247,12 +230,7 @@ public class SimpleActivity extends AppCompatActivity
 
             @Override
             public void onClick(View v) {
-                try {
-                    double val = calculator.solveExpression("");
-                    output.setText(Double.toString(val));
-                } catch (Exception exp) {
-                    output.setText(exp.toString());
-                }
+                calculator.solveExpression("");
             }
 
         });
@@ -263,7 +241,7 @@ public class SimpleActivity extends AppCompatActivity
             @Override
             public void onClick(View arg0)
             {
-                calculator.newCalculation();
+                calculator.newCalculationWithResetDisplayOutput();
             }
 
         });
@@ -311,7 +289,6 @@ public class SimpleActivity extends AppCompatActivity
         }
         return val;
     }
-
     @Override
     public void displayModeStatus(String status) {
         this.modeview.setText(status);
