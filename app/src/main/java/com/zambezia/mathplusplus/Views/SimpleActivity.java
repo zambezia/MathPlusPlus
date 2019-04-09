@@ -119,6 +119,7 @@ public class SimpleActivity extends AppCompatActivity
             Intent intent = new Intent(this,ScientificActivity.class);
             startActivity(intent);
             finish();
+            PreferenceHelperSingleton.setInstance(Enums.CURRENT_CALCULATOR_TYPE.scientific);
             return true;
         }
 
