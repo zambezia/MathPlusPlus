@@ -117,17 +117,6 @@ public class ScientificActivity extends AppCompatActivity
         if (id == R.id.action_settings) {
             return true;
         }
-        else if (id == R.id.nav_simple_calculator) {
-            Intent intent = new Intent(this,SimpleActivity.class);
-            startActivity(intent);
-            finish();
-
-            PreferenceHelperSingleton.setInstance(Enums.CURRENT_CALCULATOR_TYPE.simple);
-            return true;
-        }
-        else if (id == R.id.nav_scientific_calculator) {
-            return true;
-        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -141,6 +130,7 @@ public class ScientificActivity extends AppCompatActivity
         if (id == R.id.nav_simple_calculator) {
             Intent intent = new Intent(this,SimpleActivity.class);
             startActivity(intent);
+            PreferenceHelperSingleton.getInstance().setCurrentCalculatorType(Enums.CURRENT_CALCULATOR_TYPE.simple);
             finish();
         }
         else if (id == R.id.nav_camera) {

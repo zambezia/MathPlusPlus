@@ -112,16 +112,6 @@ public class SimpleActivity extends AppCompatActivity
         if (id == R.id.action_settings) {
             return true;
         }
-        else if (id == R.id.nav_simple_calculator) {
-            return true;
-        }
-        else if (id == R.id.nav_scientific_calculator) {
-            Intent intent = new Intent(this,ScientificActivity.class);
-            startActivity(intent);
-            finish();
-            PreferenceHelperSingleton.setInstance(Enums.CURRENT_CALCULATOR_TYPE.scientific);
-            return true;
-        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -135,6 +125,7 @@ public class SimpleActivity extends AppCompatActivity
         if (id == R.id.nav_scientific_calculator){
             Intent intent = new Intent(this,ScientificActivity.class);
             startActivity(intent);
+            PreferenceHelperSingleton.getInstance().setCurrentCalculatorType(Enums.CURRENT_CALCULATOR_TYPE.scientific);
             finish();
         }
         else if (id == R.id.nav_camera) {

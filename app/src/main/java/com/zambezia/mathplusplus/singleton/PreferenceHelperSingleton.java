@@ -31,13 +31,6 @@ public class PreferenceHelperSingleton {
         }
     }
 
-    public static void setInstance(Enums.CURRENT_CALCULATOR_TYPE profile)
-    {
-        synchronized(PreferenceHelperSingleton.class) {
-            instance = profile;
-        }
-    }
-
     public static void destroy()
     {
         instance = null;
