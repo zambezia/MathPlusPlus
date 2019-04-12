@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 
 import com.zambezia.mathplusplus.App;
-import com.zambezia.mathplusplus.Enums;
+import com.zambezia.mathplusplus.CalculatorType;
 import com.zambezia.mathplusplus.R;
 import com.zambezia.mathplusplus.helper.PreferenceHelper;
 import com.zambezia.mathplusplus.singleton.PreferenceHelperSingleton;
@@ -17,7 +17,7 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Intent intent;
-        if (PreferenceHelperSingleton.getInstance().getCurentCalculatorType() == Enums.CURRENT_CALCULATOR_TYPE.scientific) {
+        if (PreferenceHelperSingleton.getInstance().getCurentCalculatorType() == CalculatorType.SCIENTIFIC) {
             intent = new Intent(this,ScientificActivity.class);
         } else {
             intent = new Intent(this,SimpleActivity.class);

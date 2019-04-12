@@ -2,7 +2,7 @@ package com.zambezia.mathplusplus.singleton;
 
 import android.content.Context;
 
-import com.zambezia.mathplusplus.Enums;
+import com.zambezia.mathplusplus.CalculatorType;
 import com.zambezia.mathplusplus.helper.PreferenceHelper;
 
 /**
