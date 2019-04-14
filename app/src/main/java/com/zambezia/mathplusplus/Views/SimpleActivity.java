@@ -15,9 +15,9 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.zambezia.mathplusplus.CalculatorType;
 import com.zambezia.mathplusplus.Defs.CalculatorConstants;
 import com.zambezia.mathplusplus.Controllers.Calculator;
-import com.zambezia.mathplusplus.Enums;
 import com.zambezia.mathplusplus.R;
 import com.zambezia.mathplusplus.singleton.PreferenceHelperSingleton;
 
@@ -125,7 +125,7 @@ public class SimpleActivity extends AppCompatActivity
         if (id == R.id.nav_scientific_calculator){
             Intent intent = new Intent(this,ScientificActivity.class);
             startActivity(intent);
-            PreferenceHelperSingleton.getInstance().setCurrentCalculatorType(Enums.CURRENT_CALCULATOR_TYPE.scientific);
+            PreferenceHelperSingleton.getInstance().setCurrentCalculatorType(CalculatorType.SCIENTIFIC);
             finish();
         }
         else if (id == R.id.nav_camera) {

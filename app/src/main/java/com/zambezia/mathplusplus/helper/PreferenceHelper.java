@@ -7,7 +7,7 @@ import android.content.pm.PackageInfo;
 import android.preference.PreferenceManager;
 
 import com.zambezia.mathplusplus.App;
-import com.zambezia.mathplusplus.Enums;
+import com.zambezia.mathplusplus.CalculatorType;
 
 //import com.palmtronix.explorez.v1.Enums;
 //import com.palmtronix.explorez.v1.exception.LocationInvalidException;
@@ -105,15 +105,16 @@ public final class PreferenceHelper {
 //		return editor.commit();
 //	}
 
-	public Enums.CURRENT_CALCULATOR_TYPE getCurentCalculatorType() {
-		int field = PreferenceManager.getDefaultSharedPreferences(m_appContext)
-				.getInt(CURRENT_CALCULATOR, 1);
-		return Enums.toEnumVal(field);
+	public CalculatorType getCurentCalculatorType() {
+		String strCallType = PreferenceManager.getDefaultSharedPreferences(m_appContext)
+				.getString(CURRENT_CALCULATOR, "");
+		return CalculatorType.stringToEnum(strCallType);
 	}
 
-	public void setCurrentCalculatorType(Enums.CURRENT_CALCULATOR_TYPE currentCalculatorType){
+	public void setCurrentCalculatorType(CalculatorType currentCalculatorType){
 		SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(m_appContext).edit();
 		editor.putString(CURRENT_CALCULATOR, currentCalculatorType.toString());
+		editor.apply();
 		return;
 	}
 	public File getDefaultDirectory() {
