@@ -28,7 +28,7 @@ import com.zambezia.mathplusplus.singleton.PreferenceHelperSingleton;
  * @since 4/19/2013
  *
  */
-public class ScientificActivity extends AppCompatActivity
+public class SmartScientificActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, IView {
 
     private DrawerLayout drawer;
@@ -59,14 +59,14 @@ public class ScientificActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scientific);
+        setContentView(R.layout.activity_smart_scientific);
         //Calculator instance and UI code hooking
         init();
         SetListeners();
         calculator = new Calculator(this);
 
         //Setting up toolbar
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_scientific);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_smart_scientific);
         setSupportActionBar(toolbar);
 
         //Setting up FloatingActionButton
@@ -80,7 +80,7 @@ public class ScientificActivity extends AppCompatActivity
         });
 
         //Setting up DrawerLayout and NavigationView
-        drawer = (DrawerLayout) findViewById(R.id.drawer_layout_scientific);
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout_smart_scientific);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -134,10 +134,11 @@ public class ScientificActivity extends AppCompatActivity
             PreferenceHelperSingleton.getInstance().setCurrentCalculatorType(CalculatorType.SIMPLE);
             finish();
         }
-        else if (id == R.id.nav_smart_scientific_calculator) {
-            Intent intent = new Intent(this,SmartScientificActivity.class);
+        else if (id == R.id.nav_scientific_calculator)
+        {
+            Intent intent = new Intent(this,SimpleActivity.class);
             startActivity(intent);
-            PreferenceHelperSingleton.getInstance().setCurrentCalculatorType(CalculatorType.SMARTSCIENTIFIC);
+            PreferenceHelperSingleton.getInstance().setCurrentCalculatorType(CalculatorType.SCIENTIFIC);
             finish();
         }
         else if (id == R.id.nav_camera) {

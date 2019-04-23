@@ -3,7 +3,8 @@ package com.zambezia.mathplusplus;
  public enum CalculatorType
  {
      SIMPLE("Simple",0),
-     SCIENTIFIC("Scientific", 1);
+     SMARTSCIENTIFIC("SmartScientific", 1),
+     SCIENTIFIC("Scientific", 2);
 
      private String stringValue;
      private int intValue;
@@ -16,6 +17,8 @@ package com.zambezia.mathplusplus;
      public static CalculatorType stringToEnum(String str) {
          if(str.equals("Scientific"))
              return SCIENTIFIC;
+         else if(str.equals("SmartScientific"))
+             return SMARTSCIENTIFIC;
          else
              return SIMPLE;
      }
