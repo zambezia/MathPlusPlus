@@ -33,7 +33,7 @@ public class SmartScientificActivity extends AppCompatActivity
 
     private DrawerLayout drawer;
     private Button one, two, three, four, five, six, seven, eight, nine, zero, plus, minus, div, mul, equal, leftparentheses, rightparentheses, square, cube, squareRoot, ac,
-            point, sin, cos, tan, log, ln, secondfun, alpha, hyp, pow, negation, exp;
+            point, sin, cos, tan,  sinInv, cosInv, tanInv, log, ln, secondfun, alpha, hyp, pow, negation, exp;
     private Button trigMode;
     private Button store;
     private Button recall;
@@ -188,7 +188,9 @@ public class SmartScientificActivity extends AppCompatActivity
         sin = (Button) findViewById(R.id.buttonSin);
         cos = (Button) findViewById(R.id.buttonCos);
         tan = (Button) findViewById(R.id.buttontan);
-        sin = (Button) findViewById(R.id.buttonSin);
+        sinInv = (Button) findViewById(R.id.buttonSinInv);
+        cosInv = (Button) findViewById(R.id.buttonCosInv);
+        tanInv = (Button) findViewById(R.id.buttonTanInv);
         log = (Button) findViewById(R.id.buttonLog);
         ln = (Button) findViewById(R.id.buttonLn);
         secondfun = (Button) findViewById(R.id.buttonSecondfun);
@@ -248,6 +250,9 @@ public class SmartScientificActivity extends AppCompatActivity
         sin.setOnClickListener(handler1_OnClickListener);
         cos.setOnClickListener(handler1_OnClickListener);
         tan.setOnClickListener(handler1_OnClickListener);
+        sinInv.setOnClickListener(handler1_OnClickListener);
+        cosInv.setOnClickListener(handler1_OnClickListener);
+        tanInv.setOnClickListener(handler1_OnClickListener);
         exp.setOnClickListener(handler1_OnClickListener);
 
         point.setOnClickListener(new View.OnClickListener()
