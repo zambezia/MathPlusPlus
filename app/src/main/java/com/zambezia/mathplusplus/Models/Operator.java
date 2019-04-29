@@ -16,7 +16,7 @@ public class Operator
 
     public enum OperatorType
     {
-	UNARY, BINARY, TERNARY
+	UNARY, BINARY, TERNARY,CONST
     }
 
     public enum Associativity

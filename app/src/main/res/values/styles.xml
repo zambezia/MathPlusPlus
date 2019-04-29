@@ -25,11 +25,7 @@
         <item name="android:layout_weight">1</item>
         <item name="android:layout_margin">0dip</item>
         <item name="android:background">@color/colorAccent</item>
-        <item name="autoSizeTextType">uniform</item>
-        <item name="autoSizeMaxTextSize">100dp</item>
-        <item name="autoSizeMinTextSize">5dp</item>
-        <item name="autoSizeStepGranularity">1dp</item>
-        <item name="android:padding">4dp</item>
+        <item name="android:textSize">15sp</item>
     </style>
 
     <style name="SimpleButton" parent="SimpleStyle">

@@ -32,12 +32,11 @@ public class SmartScientificActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, IView {
 
     private DrawerLayout drawer;
-    private Button one, two, three, four, five, six, seven, eight, nine, zero, plus, minus, div, mul, equal, leftparentheses, rightparentheses, square, cube, squareRoot, ac,
-            point, sin, cos, tan,  sinInv, cosInv, tanInv, log, ln, secondfun, alpha, hyp, pow, negation, exp;
-    private Button trigMode;
-    private Button store;
-    private Button recall;
-    private Button memory;
+    private Button one, two, three, four, five, six, seven, eight, nine, zero, plus, minus, div, mul, equal,
+            leftparentheses, rightparentheses,
+            square, cube, squareRoot, cubeRoot, quadRoot, nRoot, ac, point, sin, cos, tan,  sinInv, cosInv, tanInv, sinH, cosH, tanH,  sinHInv, cosHInv, tanHInv,
+            log, ln, pow, exp, exp1, inv, negation,fact;
+    private Button trigMode, pi, _10ExpN;
 
     private TextView input, output, modeview, trigonoModeView;
     private Calculator calculator;
@@ -183,6 +182,9 @@ public class SmartScientificActivity extends AppCompatActivity
         rightparentheses = (Button) findViewById(R.id.buttonRightparentheses);
         square = (Button) findViewById(R.id.buttonSquare);
         squareRoot = (Button) findViewById(R.id.buttonSquareRoot);
+        cubeRoot = (Button) findViewById(R.id.buttonCubeRoot);
+        quadRoot = (Button) findViewById(R.id.buttonQuadRoot);
+        nRoot = (Button) findViewById(R.id.buttonNRoot);
         cube = (Button) findViewById(R.id.buttonCube);
         ac = (Button) findViewById(R.id.buttonClear);
         sin = (Button) findViewById(R.id.buttonSin);
@@ -191,18 +193,22 @@ public class SmartScientificActivity extends AppCompatActivity
         sinInv = (Button) findViewById(R.id.buttonSinInv);
         cosInv = (Button) findViewById(R.id.buttonCosInv);
         tanInv = (Button) findViewById(R.id.buttonTanInv);
+        sinH = (Button) findViewById(R.id.buttonSinH);
+        cosH = (Button) findViewById(R.id.buttonCosH);
+        tanH = (Button) findViewById(R.id.buttontanH);
+        sinHInv = (Button) findViewById(R.id.buttonSinHInv);
+        cosHInv = (Button) findViewById(R.id.buttonCosHInv);
+        tanHInv = (Button) findViewById(R.id.buttonTanHInv);
         log = (Button) findViewById(R.id.buttonLog);
         ln = (Button) findViewById(R.id.buttonLn);
-        secondfun = (Button) findViewById(R.id.buttonSecondfun);
-        alpha = (Button) findViewById(R.id.buttonAlpha);
-        hyp = (Button) findViewById(R.id.buttonHp);
         pow = (Button) findViewById(R.id.buttonPow);
-        exp = (Button) findViewById(R.id.buttonEXP);
-        store = (Button) findViewById(R.id.buttonStore);
-        recall = (Button) findViewById(R.id.buttonRecall);
-        memory = (Button) findViewById(R.id.buttonMemory);
+        inv = (Button) findViewById(R.id.buttonInv);
         trigMode = (Button) findViewById(R.id.buttonTrigMode);
-
+        pi = (Button) findViewById(R.id.buttonPI);
+        exp = (Button) findViewById(R.id.buttonExp);
+        _10ExpN = (Button) findViewById(R.id.button_10ExpN);
+        exp1 = (Button) findViewById(R.id.buttonExp1);
+        fact = (Button) findViewById(R.id.buttonFact);
         input = (TextView) findViewById(R.id.modeTextView);
         output = (TextView) findViewById(R.id.consoleTextView);
         modeview = (TextView) findViewById(R.id.statusMemoryView);
@@ -242,7 +248,11 @@ public class SmartScientificActivity extends AppCompatActivity
         leftparentheses.setOnClickListener(handler1_OnClickListener);
         rightparentheses.setOnClickListener(handler1_OnClickListener);
         pow.setOnClickListener(handler1_OnClickListener );
+        inv.setOnClickListener(handler1_OnClickListener );
         squareRoot.setOnClickListener(handler1_OnClickListener);
+        cubeRoot.setOnClickListener(handler1_OnClickListener);
+        quadRoot.setOnClickListener(handler1_OnClickListener);
+        nRoot.setOnClickListener(handler1_OnClickListener);
         square.setOnClickListener(handler1_OnClickListener);
         cube.setOnClickListener(handler1_OnClickListener);
         log.setOnClickListener(handler1_OnClickListener);
@@ -253,8 +263,17 @@ public class SmartScientificActivity extends AppCompatActivity
         sinInv.setOnClickListener(handler1_OnClickListener);
         cosInv.setOnClickListener(handler1_OnClickListener);
         tanInv.setOnClickListener(handler1_OnClickListener);
+        sinH.setOnClickListener(handler1_OnClickListener);
+        cosH.setOnClickListener(handler1_OnClickListener);
+        tanH.setOnClickListener(handler1_OnClickListener);
+        sinHInv.setOnClickListener(handler1_OnClickListener);
+        cosHInv.setOnClickListener(handler1_OnClickListener);
+        tanHInv.setOnClickListener(handler1_OnClickListener);
+        pi.setOnClickListener(handler1_OnClickListener);
         exp.setOnClickListener(handler1_OnClickListener);
-
+        exp1.setOnClickListener(handler1_OnClickListener);
+        _10ExpN.setOnClickListener(handler1_OnClickListener);
+        fact.setOnClickListener(handler1_OnClickListener);
         point.setOnClickListener(new View.OnClickListener()
         {
 
@@ -285,78 +304,6 @@ public class SmartScientificActivity extends AppCompatActivity
                 calculator.newCalculationWithResetDisplayOutput();
             }
 
-        });
-
-        secondfun.setOnClickListener(new View.OnClickListener()
-        {
-
-            @Override
-            public void onClick(View arg0)
-            {
-                calculator.setInputMode(Calculator.InputMode.SHIFT);
-                calculator.getModeviewText();
-            }
-        });
-
-        alpha.setOnClickListener(new View.OnClickListener()
-        {
-
-            @Override
-            public void onClick(View arg0)
-            {
-                calculator.setInputMode(Calculator.InputMode.ALPHA);
-            }
-        });
-
-        hyp.setOnClickListener(new View.OnClickListener()
-        {
-
-            @Override
-            public void onClick(View arg0)
-            {
-                calculator.setHypEnabled(true);
-            }
-
-        });
-
-        recall.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                if (calculator.getMemoryInputMode() == Calculator.MemoryInputMode.RECALL ||
-                        calculator.getMemoryInputMode() == Calculator.MemoryInputMode.STORE)
-                {
-                    calculator.commandHanlder(CalculatorConstants.RCL);
-                    calculator.clearMemoryInputMode();
-                    return;
-                }
-                calculator.setMemoryInputMode(Calculator.MemoryInputMode.RECALL);
-            }
-        });
-
-        store.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                if (calculator.getMemoryInputMode() == Calculator.MemoryInputMode.RECALL ||
-                        calculator.getMemoryInputMode() == Calculator.MemoryInputMode.STORE)
-                {
-                    calculator.commandHanlder(CalculatorConstants.STO);
-                    calculator.clearMemoryInputMode();
-                    return;
-                }
-                calculator.setMemoryInputMode(Calculator.MemoryInputMode.STORE);
-            }
-        });
-
-        memory.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View arg0) {
-                calculator.commandHanlder(CalculatorConstants.MEM_ADD);
-                calculator.clearMemoryInputMode();
-                return;
-            }
         });
 
         trigMode.setOnClickListener(new View.OnClickListener(){

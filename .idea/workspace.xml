@@ -14,11 +14,20 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5de50dbe-eff8-485d-9f56-4e5936c6bb7d" name="Default" comment="smart scientific added. original scientific restored with original UI.">
+    <list default="true" id="5de50dbe-eff8-485d-9f56-4e5936c6bb7d" name="Default" comment="new buttons added for sin, cos and tan inverse. fixed function for inverse which was returning incorrect result.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Controllers/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Controllers/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Defs/CalculatorConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Defs/CalculatorConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionEval.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionEval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionFormater.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionFormater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/Operator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/OperatorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/OperatorList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Utils/CalculatorBrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Utils/CalculatorBrain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/border.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/border.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_smart_scientific.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_smart_scientific.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <ignored path="Math++.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,49 +56,49 @@
     <session id="-1195181817">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="4" />
-          <entry key="project.open.time.7" value="7" />
+          <entry key="project.open.time.7" value="8" />
           <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="13" />
-          <entry key="java" value="152" />
+          <entry key="java" value="191" />
           <entry key="png" value="1" />
           <entry key="properties" value="1" />
-          <entry key="xml" value="224" />
+          <entry key="xml" value="234" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="13" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="152" />
+          <entry key="JAVA" value="191" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="224" />
+          <entry key="XML" value="234" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="35" />
-          <entry key="java" value="1890" />
-          <entry key="txt" value="200" />
-          <entry key="xml" value="1899" />
+          <entry key="java" value="2461" />
+          <entry key="txt" value="315" />
+          <entry key="xml" value="2108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="35" />
-          <entry key="JAVA" value="1890" />
-          <entry key="PLAIN_TEXT" value="200" />
-          <entry key="XML" value="1899" />
+          <entry key="JAVA" value="2461" />
+          <entry key="PLAIN_TEXT" value="315" />
+          <entry key="XML" value="2108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -108,52 +117,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+            <state relative-caret-position="332">
+              <caret line="253" column="62" selection-start-line="253" selection-start-column="62" selection-end-line="253" selection-end-column="62" />
               <folding>
-                <element signature="e#1796#2032#0" expanded="true" />
-                <element signature="e#2031#2032#0" expanded="true" />
-                <element signature="e#10666#10921#0" expanded="true" />
-                <element signature="e#10920#10921#0" expanded="true" />
-                <element signature="e#14106#14107#0" expanded="true" />
-                <element signature="e#14151#14152#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_smart_scientific.xml">
-          <provider editor-type-id="android-designer2" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="191" column="32" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
-              <folding>
-                <element signature="e#2650#3858#0" />
-                <element signature="e#3872#5219#0" />
-                <element signature="e#10290#14219#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/ButtonModeValues.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="124" selection-start-line="124" selection-end-line="124" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/ButtonMode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
-              <folding>
-                <element signature="e#369#370#0" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#1817#2053#0" expanded="true" />
+                <element signature="e#2052#2053#0" expanded="true" />
+                <element signature="e#11522#11709#0" expanded="true" />
+                <element signature="e#11708#11709#0" expanded="true" />
+                <element signature="e#11596#11774#0" expanded="true" />
+                <element signature="e#11773#11774#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,44 +134,71 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionEval.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="335" column="19" selection-start-line="335" selection-start-column="19" selection-end-line="335" selection-end-column="19" />
+            <state relative-caret-position="229">
+              <caret line="342" column="4" selection-start-line="342" selection-start-column="4" selection-end-line="342" selection-end-column="4" />
               <folding>
                 <element signature="e#6758#6780#0" expanded="true" />
+                <element signature="e#8983#8984#0" expanded="true" />
+                <element signature="e#9012#9013#0" expanded="true" />
+                <element signature="e#9068#9069#0" expanded="true" />
+                <element signature="e#9108#9109#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Utils/CalculatorBrain.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionFormater.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="73" column="73" lean-forward="true" selection-start-line="73" selection-start-column="73" selection-end-line="73" selection-end-column="73" />
+            <state relative-caret-position="246">
+              <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
               <folding>
-                <element signature="docComment;class#CalculatorBrain#0" />
-                <element signature="class#Mode#0;class#CalculatorBrain#0" />
-                <element signature="method#CalculatorBrain#0;class#CalculatorBrain#0" />
-                <element signature="method#performCalculation#1;class#CalculatorBrain#0" />
-                <element signature="method#performCalculation#2;class#CalculatorBrain#0" />
-                <element signature="method#NCR#0;class#CalculatorBrain#0" />
-                <element signature="method#NPR#0;class#CalculatorBrain#0" />
-                <element signature="method#Factorial#0;class#CalculatorBrain#0" />
-                <element signature="method#sinhi#0;class#CalculatorBrain#0" />
-                <element signature="method#coshi#0;class#CalculatorBrain#0" />
-                <element signature="method#tanhi#0;class#CalculatorBrain#0" />
+                <element signature="e#422#430#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Defs/CalculatorConstants.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/OperatorList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+            <state relative-caret-position="535">
+              <caret line="91" column="65" selection-start-line="91" selection-start-column="65" selection-end-line="91" selection-end-column="65" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Controllers/Calculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="303" column="27" selection-start-line="303" selection-start-column="27" selection-end-line="303" selection-end-column="27" />
+              <folding>
+                <element signature="e#1307#1308#0" expanded="true" />
+                <element signature="e#1330#1331#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_smart_scientific.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="190" selection-start-line="190" selection-end-line="190" />
+              <folding>
+                <element signature="e#499#755#0" />
+                <element signature="e#761#1126#0" />
+                <element signature="e#1132#2185#0" />
+                <element signature="e#2650#3858#0" />
+                <element signature="e#4618#5837#0" />
+                <element signature="e#5851#7106#0" />
+                <element signature="e#7120#8352#0" />
+                <element signature="e#8367#8773#0" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
     </leaf>
@@ -214,36 +213,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>outMessage</find>
-      <find>solveExpression</find>
-      <find>solve</find>
-      <find>setInstance</find>
-      <find>Simple</find>
-      <find>calcView</find>
-      <find>title_activity_simple</find>
-      <find>drawer_menu</find>
-      <find>nav.xml</find>
-      <find>nav_view</find>
-      <find>CURRENT_CALCULATOR</find>
-      <find>`</find>
-      <find>onOptionsItemSelected</find>
-      <find>initialize(</find>
-      <find>initialize</find>
-      <find>toEnumVal</find>
-      <find>getCurentCalculatorType</find>
-      <find>setCurrentCalculatorType</find>
-      <find>SImple</find>
-      <find>min</find>
-      <find>:animated-vector-drawable:23.4</find>
-      <find>mi</find>
-      <find>android.useAndroidX</find>
-      <find>buttonHp</find>
+      <find>cube</find>
+      <find>buttonCube</find>
+      <find>³√</find>
+      <find>quadRoot</find>
+      <find>sinh</find>
+      <find>&quot;4</find>
+      <find>buttonFour</find>
+      <find>square</find>
+      <find>ButtonMode</find>
+      <find>pairOperandItem</find>
+      <find>\	\	\	inputvalue \= func\;\n</find>
+      <find>n!</find>
+      <find>map</find>
+      <find>performCalculation</find>
+      <find>expression</find>
+      <find>POWER_e</find>
+      <find>&quot;e</find>
+      <find>button10ExpN</find>
+      <find>buttonEXP</find>
+      <find>POWER_e_1</find>
+      <find>EXP</find>
+      <find>exp1</find>
+      <find>PI</find>
+      <find>buttonExp1</find>
+      <find>buttonExp</find>
       <find>equal</find>
-      <find>buttonTrigMode</find>
-      <find>sin</find>
-      <find>handler1_OnClickListener</find>
-      <find>sinInv</find>
-      <find>Mode.DEGREES</find>
+      <find>buttonModulus</find>
+      <find>exp</find>
+      <find>&quot;10</find>
+      <find>isNumber</find>
     </findStrings>
     <replaceStrings>
       <replace>BaseActivity</replace>
@@ -2522,12 +2521,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/ButtonMode.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Defs/CalculatorConstants.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Utils/CalculatorMemory.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/ButtonModeValues.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionFormater.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionEval.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Enum.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/App.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
@@ -2547,14 +2541,11 @@
         <option value="$PROJECT_DIR$/app/src/main/res/menu/app_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/drawables.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_simple.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Controllers/Calculator.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Enums.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/helper/PreferenceHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/singleton/PreferenceHelperSingleton.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_scientific.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_simple.xml" />
@@ -2564,23 +2555,31 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/BaseActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_smart_scientific.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SimpleActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/ScientificActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/drawer_menu.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/border.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/app_bar_smart_scientific.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_smart_scientific.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/ScientificActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/border.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/Operator.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionEval.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Utils/CalculatorBrain.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/OperatorList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Defs/CalculatorConstants.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Controllers/Calculator.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_smart_scientific.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionFormater.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1979" />
-    <option name="y" value="74" />
-    <option name="width" value="1550" />
-    <option name="height" value="878" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -2594,17 +2593,6 @@
             <path>
               <item name="MathPlusPlus" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="MathPlusPlus" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="MathPlusPlus" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="MathPlusPlus" type="1abcf292:AndroidViewProjectNode" />
@@ -2631,6 +2619,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="directory" />
+    <property name="DEBUGGABLE_DEVICE" value="VisualStudio_android-23_x86_phone [emulator-5554]" />
+    <property name="DEBUGGABLE_PROCESS" value="com.zambezia.mathplusplus" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="device.picker.selection" value="VisualStudio_android-23_x86_phone" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -2958,7 +2950,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556017973562</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new buttons added for sin, cos and tan inverse. fixed function for inverse which was returning incorrect result.">
+      <created>1556288980150</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556288980150</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2971,10 +2970,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26545843" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3336887" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Captures" order="3" side_tool="true" weight="0.25" />
@@ -2985,15 +2983,15 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32844576" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.32814237" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49307036" visible="true" weight="0.3070078" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4914712" visible="true" weight="0.40378198" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49731544" weight="0.4105409" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.5506396" weight="0.35261402" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.5490405" weight="0.35261402" />
       <window_info anchor="bottom" id="Gradle Console" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Android Profiler" order="9" sideWeight="0.49946696" weight="0.32925472" />
       <window_info anchor="bottom" id="Android Monitor" order="10" weight="0.32929516" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50692964" side_tool="true" visible="true" weight="0.3070078" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50852877" side_tool="true" visible="true" weight="0.40378198" />
       <window_info anchor="bottom" id="Logcat" order="12" sideWeight="0.71428573" weight="0.487208" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4978678" weight="0.32703003" />
       <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49946696" weight="0.3291714" />
@@ -3084,7 +3082,8 @@
     <MESSAGE value="code refactor and simple and scientific calculator UI added." />
     <MESSAGE value="dark theme added. API level changed to 26." />
     <MESSAGE value="smart scientific added. original scientific restored with original UI." />
-    <option name="LAST_COMMIT_MESSAGE" value="smart scientific added. original scientific restored with original UI." />
+    <MESSAGE value="new buttons added for sin, cos and tan inverse. fixed function for inverse which was returning incorrect result." />
+    <option name="LAST_COMMIT_MESSAGE" value="new buttons added for sin, cos and tan inverse. fixed function for inverse which was returning incorrect result." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3096,34 +3095,51 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionEval.java</url>
-          <line>334</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Utils/CalculatorBrain.java</url>
+          <line>29</line>
           <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/ScientificActivity.java</url>
-          <line>278</line>
-          <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Utils/CalculatorBrain.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionEval.java</url>
+          <line>293</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionEval.java</url>
+          <line>279</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionEval.java</url>
+          <line>338</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionFormater.java</url>
           <line>26</line>
           <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Utils/CalculatorBrain.java</url>
-          <line>128</line>
-          <properties />
-          <option name="timeStamp" value="27" />
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="(elem.first != &quot;!&quot; &amp;&amp; pairOperandItem.second &lt; elem.second)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -3135,38 +3151,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#922#923#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/IView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/extras/android/m2repository/com/android/support/design/23.4.0/design-23.4.0-sources.jar!/android/support/design/widget/NavigationView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3111">
-          <caret line="233" column="7" selection-start-line="233" selection-start-column="7" selection-end-line="233" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionFormater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-23/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -3255,21 +3239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_scientific.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/appcompat-v7/26.1.0/2b34456c30d6b6e5db5fa3e8fa02f6cebd5531fd/appcompat-v7-26.1.0-sources.jar!/android/support/v7/app/AppCompatDelegate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -3285,29 +3254,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="71" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="71" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_simple.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/DrawerActivity.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_simple.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/CalculatorType.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -3320,14 +3289,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_simple.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-496">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3342,7 +3306,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/drawer_menu.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
@@ -3353,6 +3316,7 @@
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/os/Looper.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -3368,50 +3332,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/ScientificActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
-          <caret line="144" column="44" selection-start-line="144" selection-start-column="44" selection-end-line="144" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_scientific.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/border.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-        </state>
-      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_scientific.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-compat/26.1.0/73bfdb5cca1949a51219d3676700996990ea3b52/support-compat-26.1.0-sources.jar!/android/support/v4/view/GravityCompat.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -3421,94 +3364,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_smart_scientific.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_smart_scientific.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/ButtonMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
-          <folding>
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
-          <folding>
-            <element signature="e#1796#2032#0" expanded="true" />
-            <element signature="e#2031#2032#0" expanded="true" />
-            <element signature="e#10666#10921#0" expanded="true" />
-            <element signature="e#10920#10921#0" expanded="true" />
-            <element signature="e#14106#14107#0" expanded="true" />
-            <element signature="e#14151#14152#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Defs/CalculatorConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/ButtonModeValues.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionEval.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="335" column="19" selection-start-line="335" selection-start-column="19" selection-end-line="335" selection-end-column="19" />
-          <folding>
-            <element signature="e#6758#6780#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Controllers/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="113" column="52" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
-          <folding>
-            <element signature="e#1307#1308#0" expanded="true" />
-            <element signature="e#1330#1331#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_smart_scientific.xml">
       <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="191" column="32" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
-          <folding>
-            <element signature="e#2650#3858#0" />
-            <element signature="e#3872#5219#0" />
-            <element signature="e#10290#14219#0" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -3523,22 +3392,192 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/border.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_scientific.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="944" column="38" selection-start-line="944" selection-start-column="38" selection-end-line="944" selection-end-column="38" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_simple.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/ButtonModeValues.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2049">
+          <caret line="129" column="32" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/ButtonMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/util/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/Operator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/ScientificActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="196" column="52" selection-start-line="196" selection-start-column="7" selection-end-line="196" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Utils/CalculatorBrain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="73" column="73" lean-forward="true" selection-start-line="73" selection-start-column="73" selection-end-line="73" selection-end-column="73" />
+        <state relative-caret-position="110">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
           <folding>
             <element signature="docComment;class#CalculatorBrain#0" />
             <element signature="class#Mode#0;class#CalculatorBrain#0" />
             <element signature="method#CalculatorBrain#0;class#CalculatorBrain#0" />
-            <element signature="method#performCalculation#1;class#CalculatorBrain#0" />
-            <element signature="method#performCalculation#2;class#CalculatorBrain#0" />
             <element signature="method#NCR#0;class#CalculatorBrain#0" />
             <element signature="method#NPR#0;class#CalculatorBrain#0" />
             <element signature="method#Factorial#0;class#CalculatorBrain#0" />
             <element signature="method#sinhi#0;class#CalculatorBrain#0" />
             <element signature="method#coshi#0;class#CalculatorBrain#0" />
             <element signature="method#tanhi#0;class#CalculatorBrain#0" />
+            <element signature="e#6068#6069#0" expanded="true" />
+            <element signature="e#6092#6093#0" expanded="true" />
+            <element signature="e#6138#6139#0" expanded="true" />
+            <element signature="e#6173#6174#0" expanded="true" />
+            <element signature="e#6206#6207#0" expanded="true" />
+            <element signature="e#6224#6225#0" expanded="true" />
+            <element signature="e#6263#6264#0" expanded="true" />
+            <element signature="e#6278#6279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Defs/CalculatorConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Models/OperatorList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="91" column="65" selection-start-line="91" selection-start-column="65" selection-end-line="91" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Controllers/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="303" column="27" selection-start-line="303" selection-start-column="27" selection-end-line="303" selection-end-column="27" />
+          <folding>
+            <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_smart_scientific.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="190" selection-start-line="190" selection-end-line="190" />
+          <folding>
+            <element signature="e#499#755#0" />
+            <element signature="e#761#1126#0" />
+            <element signature="e#1132#2185#0" />
+            <element signature="e#2650#3858#0" />
+            <element signature="e#4618#5837#0" />
+            <element signature="e#5851#7106#0" />
+            <element signature="e#7120#8352#0" />
+            <element signature="e#8367#8773#0" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="253" column="62" selection-start-line="253" selection-start-column="62" selection-end-line="253" selection-end-column="62" />
+          <folding>
+            <element signature="e#1817#2053#0" expanded="true" />
+            <element signature="e#2052#2053#0" expanded="true" />
+            <element signature="e#11522#11709#0" expanded="true" />
+            <element signature="e#11708#11709#0" expanded="true" />
+            <element signature="e#11596#11774#0" expanded="true" />
+            <element signature="e#11773#11774#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionEval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="342" column="4" selection-start-line="342" selection-start-column="4" selection-end-line="342" selection-end-column="4" />
+          <folding>
+            <element signature="e#6758#6780#0" expanded="true" />
+            <element signature="e#8983#8984#0" expanded="true" />
+            <element signature="e#9012#9013#0" expanded="true" />
+            <element signature="e#9068#9069#0" expanded="true" />
+            <element signature="e#9108#9109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionFormater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+          <folding>
+            <element signature="e#422#430#0" expanded="true" />
           </folding>
         </state>
       </provider>

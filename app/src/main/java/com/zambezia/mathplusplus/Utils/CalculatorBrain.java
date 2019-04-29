@@ -87,6 +87,20 @@ public class CalculatorBrain {
 		return val;
 	}
 
+	public static double performCalculation(String operation)
+	{
+		CalcDebug.Debug("performCalculation(string)");
+		double val = 0.0;
+
+		if (operation.equalsIgnoreCase(CalculatorConstants.PI))
+			val = Math.PI;
+		else if(operation.equalsIgnoreCase(CalculatorConstants.POWER_e_1))
+			val = Math.E;
+
+
+		CalcDebug.Debug("val = " + val);
+		return val;
+	}
 	public static double performCalculation(String operation, double arg0, double arg1) {
 
 		CalcDebug.Debug("performCalculation(string, double, double)");

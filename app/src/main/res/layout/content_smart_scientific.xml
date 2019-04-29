@@ -118,50 +118,44 @@
                 android:layout_width= "match_parent">
 
                 <Button
-                    android:id="@+id/buttonSecondfun"
-                    android:textColor="@color/colorTextLeft"
-                    android:text="2ndF"
-                    style="@style/SimpleButton"/>
-
-                <Button
-                    android:id="@+id/buttonAlpha"
-                    android:textColor="@color/colorTextRight"
-                    android:text="Alpha"
-                    style="@style/SimpleButton"/>
-
-                <Button
-                    android:id="@+id/button12"
-                    android:text="Prog"
-                    style="@style/SimpleButton"/>
-
-                <Button
-                    android:id="@+id/button13"
-                    android:text="\u21e6"
+                    android:id="@+id/buttonTrigMode"
+                    android:text="DRG"
                     style="@style/SimpleButton" />
 
                 <Button
-                    android:id="@+id/button14"
-                    android:text="\u21e8"
+                    android:id="@+id/buttonPI"
+                    android:text="\u03C0"
                     style="@style/SimpleButton" />
 
                 <Button
-                    android:id="@+id/button15"
-                    android:text="1/x"
+                    android:id="@+id/buttonExp1"
+                    android:text="e\u00B9"
                     style="@style/SimpleButton" />
+
+                <Button
+                    android:id="@+id/buttonExp"
+                    android:text="e\u207F"
+                    style="@style/SimpleButton" />
+
+
+                <Button
+                    android:id="@+id/button_10ExpN"
+                    android:text="10\u207f"
+                    style="@style/SimpleButton" />
+
+                <Button
+                    android:id="@+id/buttonFact"
+                    android:text="n!"
+                    style="@style/SimpleButton" />
+
 
             </LinearLayout>
-
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_height = "0dp"
                 android:layout_weight = "1"
                 android:layout_width= "match_parent">
-
-                <Button
-                    android:id="@+id/buttonHp"
-                    android:text="hyp"
-                    style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonSin"
@@ -176,16 +170,6 @@
                 <Button
                     android:id="@+id/buttontan"
                     android:text="tan"
-                    style="@style/SimpleButton" />
-
-                <Button
-                    android:id="@+id/button24"
-                    android:text="PI"
-                    style="@style/SimpleButton" />
-
-                <Button
-                    android:id="@+id/buttonTrigMode"
-                    android:text="DRG"
                     style="@style/SimpleButton" />
 
                 <Button
@@ -208,107 +192,38 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_height = "0dp"
-                android:layout_weight = "0.7"
+                android:layout_weight = "1"
                 android:layout_width= "match_parent">
 
-                <LinearLayout android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/buttonSinH"
+                    android:text="sinh"
+                    style="@style/SimpleButton" />
 
-                    <TextView
-                        android:id="@+id/textView300"
-                        android:text="n\u221Ax"
-                        style="@style/SimpleTextLeft" />
+                <Button
+                    android:id="@+id/buttonCosH"
+                    android:text="cosh"
+                    style="@style/SimpleButton" />
 
-                    <TextView
-                        android:id="@+id/textView301"
-                        android:text="A"
-                        style="@style/SimpleTextRight" />
+                <Button
+                    android:id="@+id/buttontanH"
+                    android:text="tanh"
+                    style="@style/SimpleButton" />
 
-                </LinearLayout>
+                <Button
+                    android:id="@+id/buttonSinHInv"
+                    android:text="sinh-\u00B9"
+                    style="@style/SimpleButton" />
 
-                <LinearLayout android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/buttonCosHInv"
+                    android:text="cosh-\u00B9"
+                    style="@style/SimpleButton" />
 
-                    <TextView
-                        android:id="@+id/textView310"
-                        android:text="4\u221A"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView311"
-                        android:text="B"
-                        style="@style/SimpleTextRight" />
-
-                </LinearLayout>
-
-                <LinearLayout android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal" >
-
-                    <TextView
-                        android:id="@+id/textView320"
-                        android:text="x-\u00B9"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView321"
-                        android:text="C"
-                        style="@style/SimpleTextRight" />
-                </LinearLayout>
-
-                <LinearLayout android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal" >
-
-                    <TextView
-                        android:id="@+id/textView330"
-                        android:text="3\u221A"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView331"
-                        style="@style/SimpleTextRight" />
-
-                </LinearLayout>
-
-                <LinearLayout android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal" >
-
-                    <TextView
-                        android:id="@+id/textView340"
-                        android:text="10\u207f"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView341"
-                        android:text="E"
-                        style="@style/SimpleTextRight" />
-                </LinearLayout>
-
-                <LinearLayout android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal" >
-
-                    <TextView
-                        android:id="@+id/textView350"
-                        android:text="e\u207F"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView351"
-                        android:text="F"
-                        style="@style/SimpleTextRight" />
-
-                </LinearLayout>
+                <Button
+                    android:id="@+id/buttonTanHInv"
+                    android:text="tanh-\u00B9"
+                    style="@style/SimpleButton" />
 
             </LinearLayout>
 
@@ -318,15 +233,6 @@
                 android:layout_weight = "1"
                 android:layout_width= "match_parent">
 
-                <Button
-                    android:id="@+id/buttonPow"
-                    android:text="xⁿ"
-                    style="@style/SimpleButton" />
-
-                <Button
-                    android:id="@+id/buttonSquareRoot"
-                    android:text="\u221A"
-                    style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonSquare"
@@ -336,6 +242,16 @@
                 <Button
                     android:id="@+id/buttonCube"
                     android:text="x\u00b3"
+                    style="@style/SimpleButton" />
+
+                <Button
+                    android:id="@+id/buttonPow"
+                    android:text="xⁿ"
+                    style="@style/SimpleButton" />
+
+                <Button
+                    android:id="@+id/buttonInv"
+                    android:text="x-\u00B9"
                     style="@style/SimpleButton" />
 
                 <Button
@@ -353,110 +269,25 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_height = "0dp"
-                android:layout_weight = "0.7"
-                android:layout_width= "match_parent">
-
-                <TextView
-                    android:id="@+id/textView40"
-                    android:text="\u2190.\u2192"
-                    style="@style/SimpleText" />
-
-                <TextView
-                    android:id="@+id/textView41"
-                    android:text="d/c"
-                    style="@style/SimpleText" />
-
-                <TextView
-                    android:id="@+id/textView42"
-                    android:text="\u2194DEG"
-                    style="@style/SimpleText" />
-
-                <LinearLayout android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView430"
-                        android:text=""
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView431"
-                        android:text="X"
-                        style="@style/SimpleTextRight" />
-
-                </LinearLayout>
-
-                <LinearLayout android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView440"
-                        android:text=","
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView441"
-                        android:text="Y"
-                        style="@style/SimpleTextRight" />
-
-                </LinearLayout>
-
-                <LinearLayout android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView450"
-                        android:text="M-"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView451"
-                        android:text="M"
-                        style="@style/SimpleTextRight" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_height = "0dp"
                 android:layout_weight = "1"
                 android:layout_width= "match_parent">
 
-                <Button
-                    android:id="@+id/buttonEXP"
-                    android:text="EXP"
-                    style="@style/SimpleButton" />
 
                 <Button
-                    android:id="@+id/button41"
-                    android:text="a b/c"
+                    android:id="@+id/buttonSquareRoot"
+                    android:text="\u221A"
                     style="@style/SimpleButton" />
-
                 <Button
-                    android:id="@+id/button42"
-                    android:text="\u00b0 \u2032 \u2032\u2032"
+                    android:id="@+id/buttonCubeRoot"
+                    android:text="³\u221A"
                     style="@style/SimpleButton" />
-
                 <Button
-                    android:id="@+id/buttonRecall"
-                    android:text="RCL"
+                    android:id="@+id/buttonQuadRoot"
+                    android:text="⁴\u221A"
                     style="@style/SimpleButton" />
-
                 <Button
-                    android:id="@+id/buttonStore"
-                    android:text="STO"
-                    style="@style/SimpleButton" />
-
-                <Button
-                    android:id="@+id/buttonMemory"
-                    android:text="M+"
+                    android:id="@+id/buttonNRoot"
+                    android:text="ⁿ√x"
                     style="@style/SimpleButton" />
 
             </LinearLayout>
@@ -469,101 +300,6 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:orientation="vertical">
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_height = "0dp"
-                android:layout_weight = "1"
-                android:layout_width= "match_parent">
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView500"
-                        android:text="RAND"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView501"
-                        android:text="y\u203e"
-                        style="@style/SimpleTextRight" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView510"
-                        android:text="\u2192\u0398"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView511"
-                        android:text="sy"
-                        style="@style/SimpleTextRight" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView520"
-                        android:text="\u2192xy"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView521"
-                        android:text="\u03c3y"
-                        style="@style/SimpleTextRight" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView530"
-                        android:text="x\u2032"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView531"
-                        android:text="a"
-                        style="@style/SimpleTextRight" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView540"
-                        android:text="y\u2032"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView541"
-                        android:text="b"
-                        style="@style/SimpleTextRight" />
-                </LinearLayout>
-
-            </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -595,100 +331,6 @@
                     android:id="@+id/buttonRightparentheses"
                     android:text=")"
                     style="@style/SimpleButton" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_height = "0dp"
-                android:layout_weight = "1"
-                android:layout_width= "match_parent">
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView600"
-                        android:text="n!"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView601"
-                        android:text="x\u203e"
-                        style="@style/SimpleTextRight" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView610"
-                        android:text="nCr"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView611"
-                        android:text="sx"
-                        style="@style/SimpleTextRight" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView620"
-                        android:text="nPr"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView621"
-                        android:text="\u03c3x"
-                        style="@style/SimpleTextRight" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView630"
-                        android:text="\u2192Hex"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView631"
-                        android:text="c"
-                        style="@style/SimpleTextRight" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView640"
-                        android:text="\u2192Bin"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView641"
-                        android:text="r"
-                        style="@style/SimpleTextRight" />
-                </LinearLayout>
 
             </LinearLayout>
 
@@ -730,76 +372,6 @@
                 android:layout_weight = "1"
                 android:layout_width= "match_parent">
 
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView700"
-                        android:text=""
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView701"
-                        android:text="\u2211xy"
-                        style="@style/SimpleTextRight" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView710"
-                        android:text=""
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView711"
-                        android:text="\u2211y"
-                        style="@style/SimpleTextRight" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView720"
-                        android:text=""
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView721"
-                        android:text="\u2211y\u00b2"
-                        style="@style/SimpleTextRight" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textView73"
-                    android:text="\u2192Dec"
-                    style="@style/SimpleText" />
-
-                <TextView
-                    android:id="@+id/textView74"
-                    android:text="\u2192Oct"
-                    style="@style/SimpleText" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_height = "0dp"
-                android:layout_weight = "1"
-                android:layout_width= "match_parent">
-
                 <Button
                     android:id="@+id/buttonOne"
                     android:text="1"
@@ -824,78 +396,6 @@
                     android:id="@+id/buttonMinus"
                     android:text="-"
                     style="@style/SimpleButton" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_height = "0dp"
-                android:layout_weight = "1"
-                android:layout_width= "match_parent">
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView800"
-                        android:text="MDF"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView801"
-                        android:text="n"
-                        style="@style/SimpleTextRight" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView810"
-                        android:text="%"
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView811"
-                        android:text="\u2211x"
-                        style="@style/SimpleTextRight" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_height = "match_parent"
-                    android:layout_weight = "1"
-                    android:layout_width= "0dp">
-
-                    <TextView
-                        android:id="@+id/textView820"
-                        android:text=""
-                        style="@style/SimpleTextLeft" />
-
-                    <TextView
-                        android:id="@+id/textView821"
-                        android:text="\u2211x\u00b2"
-                        style="@style/SimpleTextRight" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textView83"
-                    android:text="\u2192PEN"
-                    style="@style/SimpleText" />
-
-                <TextView
-                    android:id="@+id/textView84"
-                    android:text="ANS"
-                    style="@style/SimpleText" />
 
             </LinearLayout>
 

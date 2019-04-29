@@ -300,6 +300,8 @@ public class Calculator {
 		}
 		else
 		{
+			if(func.equals("n!"))
+				func = "!";
 			inputvalue = func;
 		}
 		

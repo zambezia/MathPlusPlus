@@ -292,7 +292,11 @@ public class ExpressionEval {
 				double arg2 = 0.0;
 
 				OperatorType t = OperatorList.getOperatorType(elem.first);
-				if (t == OperatorType.BINARY) {
+				if (t == OperatorType.CONST)
+				{
+					val = CalculatorBrain.performCalculation(elem.first);
+				}
+				else if (t == OperatorType.BINARY) {
 					arg1 = Double.parseDouble(operationStack.pop().first);
 					pairOperandItem = operationStack.pop();
 					arg0 = Double.parseDouble(pairOperandItem.first);
@@ -302,7 +306,8 @@ public class ExpressionEval {
 				{
 					pairOperandItem = operationStack.pop();
 					arg0 = Double.parseDouble(pairOperandItem.first);
-					if (pairOperandItem.second < elem.second)
+					if ((!elem.first.equals("!") && pairOperandItem.second < elem.second) ||
+							(elem.first.equals("!") && pairOperandItem.second > elem.second))
 						arg0 = Double.parseDouble("Invalid expression");
 					smalIndex = pairOperandItem.second;
 					val = CalculatorBrain.performCalculation(elem.first, arg0);

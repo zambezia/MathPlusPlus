@@ -66,6 +66,8 @@ public class OperatorList {
 		getOperatorList().add(new Operator(CalculatorConstants.QUAD_ROOT, OperatorList.PRECEDANCE2, OperatorType.UNARY, Associativity.RIGHT));
 		getOperatorList().add(new Operator(CalculatorConstants.N_POWER, OperatorList.PRECEDANCE2, OperatorType.BINARY, Associativity.RIGHT));
 		getOperatorList().add(new Operator(CalculatorConstants.EXP, OperatorList.PRECEDANCE2, OperatorType.BINARY, Associativity.RIGHT));
+		getOperatorList().add(new Operator(CalculatorConstants.PI, OperatorList.PRECEDANCE2, OperatorType.CONST, Associativity.RIGHT));
+		getOperatorList().add(new Operator(CalculatorConstants.POWER_e_1, OperatorList.PRECEDANCE2, OperatorType.CONST, Associativity.RIGHT));
 		getOperatorList().add(new Operator(CalculatorConstants.N_ROOT, OperatorList.PRECEDANCE2, OperatorType.BINARY, Associativity.RIGHT));
 		getOperatorList().add(new Operator(CalculatorConstants.INV, OperatorList.PRECEDANCE2, OperatorType.UNARY, Associativity.RIGHT));
 		//Logrithams and Power of 10 and e.
