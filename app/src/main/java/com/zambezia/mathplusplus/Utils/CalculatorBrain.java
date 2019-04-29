@@ -34,11 +34,11 @@ public class CalculatorBrain {
 		} else if (operation.equalsIgnoreCase(CalculatorConstants.TAN)) {
 			val = Math.tan(convert(arg0));
 		} else if (operation.equalsIgnoreCase(CalculatorConstants.SINI)) {
-			val = Math.asin(convert(arg0));
+			val = convertBack(Math.asin(arg0));
 		} else if (operation.equalsIgnoreCase(CalculatorConstants.COSI)) {
-			val = Math.acos(convert(arg0));
+			val = convertBack(Math.acos(arg0));
 		} else if (operation.equalsIgnoreCase(CalculatorConstants.TANI)) {
-			val = Math.atan(convert(arg0));
+			val = convertBack(Math.atan(arg0));
 		} else if (operation.equalsIgnoreCase(CalculatorConstants.SINH)) {
 			val = Math.sinh(arg0);
 		} else if (operation.equalsIgnoreCase(CalculatorConstants.COSH)) {
@@ -87,6 +87,20 @@ public class CalculatorBrain {
 		return val;
 	}
 
+	public static double performCalculation(String operation)
+	{
+		CalcDebug.Debug("performCalculation(string)");
+		double val = 0.0;
+
+		if (operation.equalsIgnoreCase(CalculatorConstants.PI))
+			val = Math.PI;
+		else if(operation.equalsIgnoreCase(CalculatorConstants.POWER_e_1))
+			val = Math.E;
+
+
+		CalcDebug.Debug("val = " + val);
+		return val;
+	}
 	public static double performCalculation(String operation, double arg0, double arg1) {
 
 		CalcDebug.Debug("performCalculation(string, double, double)");
@@ -132,6 +146,18 @@ public class CalculatorBrain {
 			val = Math.PI * arg0 / 200;
 
 	    return val;
+	}
+
+	private static double convertBack(double arg0)
+	{
+		double val = 0.0;
+
+		if (getMode() == Mode.DEGREES)
+			val = Math.toDegrees(arg0);
+		else if (getMode() == Mode.GRADIAN)
+			val = 200 * arg0 / Math.PI;
+
+		return val;
 	}
 	
 	public static double performCalculation(String operation, double arg0,

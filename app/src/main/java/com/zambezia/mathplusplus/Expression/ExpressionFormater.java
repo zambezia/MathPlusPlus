@@ -24,7 +24,7 @@ public class ExpressionFormater
 		{
 			String string = exprlist.get(i);
 			
-			if(isNumber(string.charAt(0)))
+			if(isNumber(string.charAt(0)) && string.length() ==1)
 			{
 				concatvalues += string.charAt(0);
 			}

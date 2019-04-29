@@ -3,6 +3,7 @@ package com.zambezia.mathplusplus.Views;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.widget.ThemedSpinnerAdapter;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -83,6 +84,8 @@ public class SimpleActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
     }
 
     @Override
@@ -126,6 +129,13 @@ public class SimpleActivity extends AppCompatActivity
             Intent intent = new Intent(this,ScientificActivity.class);
             startActivity(intent);
             PreferenceHelperSingleton.getInstance().setCurrentCalculatorType(CalculatorType.SCIENTIFIC);
+            finish();
+        }
+        else if (id == R.id.nav_smart_scientific_calculator)
+        {
+            Intent intent = new Intent(this,SmartScientificActivity.class);
+            startActivity(intent);
+            PreferenceHelperSingleton.getInstance().setCurrentCalculatorType(CalculatorType.SMARTSCIENTIFIC);
             finish();
         }
         else if (id == R.id.nav_camera) {

@@ -81,6 +81,7 @@ public class ScientificActivity extends AppCompatActivity
 
         //Setting up DrawerLayout and NavigationView
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout_scientific);
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
@@ -131,6 +132,12 @@ public class ScientificActivity extends AppCompatActivity
             Intent intent = new Intent(this,SimpleActivity.class);
             startActivity(intent);
             PreferenceHelperSingleton.getInstance().setCurrentCalculatorType(CalculatorType.SIMPLE);
+            finish();
+        }
+        else if (id == R.id.nav_smart_scientific_calculator) {
+            Intent intent = new Intent(this,SmartScientificActivity.class);
+            startActivity(intent);
+            PreferenceHelperSingleton.getInstance().setCurrentCalculatorType(CalculatorType.SMARTSCIENTIFIC);
             finish();
         }
         else if (id == R.id.nav_camera) {
