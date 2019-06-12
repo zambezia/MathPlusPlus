@@ -42,7 +42,7 @@ public class ScientificActivity extends AppCompatActivity
     private TextView input, output, modeview, trigonoModeView;
     private Calculator calculator;
 
-    String[] expression = { CalculatorConstants.POWER_e, "30" };
+    String[] expression = { CalculatorConstants.POWER_e_n, "30" };
 
     private View.OnClickListener handler1_OnClickListener = new View.OnClickListener(){
 
@@ -69,15 +69,15 @@ public class ScientificActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_scientific);
         setSupportActionBar(toolbar);
 
-        //Setting up FloatingActionButton
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //TODO: Implement CLICK functionality
-            }
-        });
+//        //Setting up FloatingActionButton
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                //TODO: Implement CLICK functionality
+//            }
+//        });
 
         //Setting up DrawerLayout and NavigationView
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout_scientific);

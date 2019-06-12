@@ -69,7 +69,7 @@ public class CalculatorBrain {
 			val = Math.log(arg0);
 		} else if (operation.equalsIgnoreCase(CalculatorConstants.POWER_10)) {
 			val = Math.pow(10, arg0);
-		} else if (operation.equalsIgnoreCase(CalculatorConstants.POWER_e)) {
+		} else if (operation.equalsIgnoreCase(CalculatorConstants.POWER_e_n)) {
 			val = Math.pow(Math.E, arg0);
 		} else if (operation.equalsIgnoreCase(CalculatorConstants.INV)) {
 			val = 1.0 / arg0;

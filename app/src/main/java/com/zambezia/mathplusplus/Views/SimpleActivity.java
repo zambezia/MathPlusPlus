@@ -3,7 +3,6 @@ package com.zambezia.mathplusplus.Views;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v7.widget.ThemedSpinnerAdapter;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -39,7 +38,7 @@ public class SimpleActivity extends AppCompatActivity
     private TextView input, output, modeview, trigonoModeView;
     private Calculator calculator;
 
-    String[] expression = { CalculatorConstants.POWER_e, "30" };
+    String[] expression = { CalculatorConstants.POWER_e_n, "30" };
 
     private View.OnClickListener handler1_OnClickListener = new View.OnClickListener(){
 
@@ -65,15 +64,15 @@ public class SimpleActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_simple);
         setSupportActionBar(toolbar);
 
-        //Setting up FloatingActionButton
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //TODO: Implement CLICK functionality
-            }
-        });
+//        //Setting up FloatingActionButton
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                //TODO: Implement CLICK functionality
+//            }
+//        });
 
         //Setting up DrawerLayout and NavigationView
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout_simple);

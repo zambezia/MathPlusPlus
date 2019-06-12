@@ -7,7 +7,6 @@ package com.zambezia.mathplusplus.Models;
  *
  */
 import com.zambezia.mathplusplus.Defs.CalculatorConstants;
-import com.zambezia.mathplusplus.Models.ButtonMode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -62,7 +61,7 @@ public class ButtonModeValues
 	modevalues.put(CalculatorConstants.LOG, mode);
 
 	mode = new ButtonMode();
-	mode.setModes(CalculatorConstants.POWER_e, "F");
+	mode.setModes(CalculatorConstants.POWER_e_n, "F");
 	modevalues.put(CalculatorConstants.NATURAL_LOG, mode);
 	
 	mode = new ButtonMode();

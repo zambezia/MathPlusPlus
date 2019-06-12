@@ -534,7 +534,7 @@
                     android:layout_width="@dimen/secondary_button_size_width"
                     android:layout_height="@dimen/secondary_button_size_height"
                     android:gravity="center_horizontal"
-                    android:text="\u221A"
+                    android:text="@string/symbol_square_root"
                     android:textSize="@dimen/secondary_button_text_size" />
 
                 <Button
@@ -542,7 +542,8 @@
                     android:layout_width="@dimen/secondary_button_size_width"
                     android:layout_height="@dimen/secondary_button_size_height"
                     android:gravity="center_horizontal"
-                    android:text="x\u00b2"
+                    android:text="@string/symbol_square"
+
                     android:textSize="@dimen/secondary_button_text_size" />
 
                 <Button
@@ -550,7 +551,7 @@
                     android:layout_width="@dimen/secondary_button_size_width"
                     android:layout_height="@dimen/secondary_button_size_height"
                     android:gravity="center_horizontal"
-                    android:text="x\u00b3"
+                    android:text="@string/symbol_cube"
                     android:textSize="@dimen/secondary_button_text_size" />
 
                 <Button

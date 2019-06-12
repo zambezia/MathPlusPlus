@@ -124,23 +124,23 @@
 
                 <Button
                     android:id="@+id/buttonPI"
-                    android:text="\u03C0"
+                    android:text="@string/symbol_pi"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonExp1"
-                    android:text="e\u00B9"
+                    android:text="@string/symbol_e_1"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonExp"
-                    android:text="e\u207F"
+                    android:text="@string/symbol_e_n"
                     style="@style/SimpleButton" />
 
 
                 <Button
                     android:id="@+id/button_10ExpN"
-                    android:text="10\u207f"
+                    android:text="@string/symbol_pow_10"
                     style="@style/SimpleButton" />
 
                 <Button
@@ -159,32 +159,32 @@
 
                 <Button
                     android:id="@+id/buttonSin"
-                    android:text="sin"
+                    android:text="@string/symbol_sin"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonCos"
-                    android:text="cos"
+                    android:text="@string/symbol_cos"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttontan"
-                    android:text="tan"
+                    android:text="@string/symbol_tan"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonSinInv"
-                    android:text="sin-\u00B9"
+                    android:text="@string/symbol_sin_inv"
                     style="@style/SimpleButton" />
 
                 <Button
-                android:id="@+id/buttonCosInv"
-                android:text="cos-\u00B9"
+                    android:id="@+id/buttonCosInv"
+                    android:text="@string/symbol_cos_inv"
                 style="@style/SimpleButton" />
 
                 <Button
-                android:id="@+id/buttonTanInv"
-                android:text="tan-\u00B9"
+                    android:id="@+id/buttonTanInv"
+                    android:text="@string/symbol_tan_inv"
                 style="@style/SimpleButton" />
 
             </LinearLayout>
@@ -197,32 +197,32 @@
 
                 <Button
                     android:id="@+id/buttonSinH"
-                    android:text="sinh"
+                    android:text="@string/symbol_sinh"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonCosH"
-                    android:text="cosh"
+                    android:text="@string/symbol_cosh"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttontanH"
-                    android:text="tanh"
+                    android:text="@string/symbol_tanh"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonSinHInv"
-                    android:text="sinh-\u00B9"
+                    android:text="@string/symbol_sinh_inv"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonCosHInv"
-                    android:text="cosh-\u00B9"
+                    android:text="@string/symbol_cosh_inv"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonTanHInv"
-                    android:text="tanh-\u00B9"
+                    android:text="@string/symbol_tanh_inv"
                     style="@style/SimpleButton" />
 
             </LinearLayout>
@@ -236,17 +236,17 @@
 
                 <Button
                     android:id="@+id/buttonSquare"
-                    android:text="x\u00b2"
+                    android:text="@string/symbol_square"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonCube"
-                    android:text="x\u00b3"
+                    android:text="@string/symbol_cube"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonPow"
-                    android:text="xⁿ"
+                    android:text="@string/symbol_pow_n"
                     style="@style/SimpleButton" />
 
                 <Button
@@ -275,19 +275,19 @@
 
                 <Button
                     android:id="@+id/buttonSquareRoot"
-                    android:text="\u221A"
+                    android:text="@string/symbol_square_root"
                     style="@style/SimpleButton" />
                 <Button
                     android:id="@+id/buttonCubeRoot"
-                    android:text="³\u221A"
+                    android:text="@string/symbol_cube_root"
                     style="@style/SimpleButton" />
                 <Button
                     android:id="@+id/buttonQuadRoot"
-                    android:text="⁴\u221A"
+                    android:text="@string/symbol_quad_root"
                     style="@style/SimpleButton" />
                 <Button
                     android:id="@+id/buttonNRoot"
-                    android:text="ⁿ√x"
+                    android:text="@string/symbol_n_root"
                     style="@style/SimpleButton" />
 
             </LinearLayout>
@@ -309,17 +309,17 @@
 
                 <Button
                     android:id="@+id/buttonSeven"
-                    android:text="7"
+                    android:text="@string/symbol_7"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonEight"
-                    android:text="8"
+                    android:text="@string/symbol_8"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonNine"
-                    android:text="9"
+                    android:text="@string/symbol_9"
                     style="@style/SimpleButton" />
 
                 <Button
@@ -342,17 +342,17 @@
 
                 <Button
                     android:id="@+id/buttonFour"
-                    android:text="4"
+                    android:text="@string/symbol_4"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonFive"
-                    android:text="5"
+                    android:text="@string/symbol_5"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonSix"
-                    android:text="6"
+                    android:text="@string/symbol_6"
                     style="@style/SimpleButton" />
 
                 <Button
@@ -374,17 +374,17 @@
 
                 <Button
                     android:id="@+id/buttonOne"
-                    android:text="1"
+                    android:text="@string/symbol_1"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttontwo"
-                    android:text="2"
+                    android:text="@string/symbol_2"
                     style="@style/SimpleButton" />
 
                 <Button
                     android:id="@+id/buttonThree"
-                    android:text="3"
+                    android:text="@string/symbol_3"
                     style="@style/SimpleButton" />
 
                 <Button
@@ -407,7 +407,7 @@
 
                 <Button
                     android:id="@+id/buttonZero"
-                    android:text="0"
+                    android:text="@string/symbol_0"
                     style="@style/SimpleButton" />
 
                 <Button
@@ -417,7 +417,7 @@
 
                 <Button
                     android:id="@+id/buttonNegation"
-                    android:text="±"
+                    android:text="@string/symbol_negation"
                     style="@style/SimpleButton" />
 
                 <Button

@@ -74,7 +74,7 @@ public class OperatorList {
 		getOperatorList().add(new Operator(CalculatorConstants.LOG, OperatorList.PRECEDANCE2, OperatorType.UNARY, Associativity.RIGHT));
 		getOperatorList().add(new Operator(CalculatorConstants.NATURAL_LOG, OperatorList.PRECEDANCE2, OperatorType.UNARY, Associativity.RIGHT));
 		getOperatorList().add(new Operator(CalculatorConstants.POWER_10, OperatorList.PRECEDANCE2, OperatorType.UNARY, Associativity.RIGHT));
-		getOperatorList().add(new Operator(CalculatorConstants.POWER_e, OperatorList.PRECEDANCE2, OperatorType.UNARY, Associativity.RIGHT));
+		getOperatorList().add(new Operator(CalculatorConstants.POWER_e_n, OperatorList.PRECEDANCE2, OperatorType.UNARY, Associativity.RIGHT));
 		getOperatorList().add(new Operator(CalculatorConstants.NCR, OperatorList.PRECEDANCE2, OperatorType.BINARY, Associativity.RIGHT));
 		getOperatorList().add(new Operator(CalculatorConstants.NPR, OperatorList.PRECEDANCE2, OperatorType.BINARY, Associativity.RIGHT));
 		getOperatorList().add(new Operator(CalculatorConstants.FACTORIAL, OperatorList.PRECEDANCE2, OperatorType.UNARY, Associativity.RIGHT));
