@@ -3,6 +3,8 @@ package com.zambezia.mathplusplus.Utils;
 
 import com.zambezia.mathplusplus.Defs.CalculatorConstants;
 
+import static com.zambezia.mathplusplus.Defs.CalculatorConstants.GetActualOperator;
+
 /**
  * Main calculation brain which performs all the arithmetics and mathematics
  * @author Abdul.Basir
@@ -51,7 +53,7 @@ public class CalculatorBrain {
 			val = coshi(arg0);
 		} else if (operation.equalsIgnoreCase(CalculatorConstants.TANHI)) {
 			val = tanhi(arg0);
-		} else if (operation.equalsIgnoreCase(CalculatorConstants.SQUARE)) {
+		} else if (operation.equalsIgnoreCase(GetActualOperator(CalculatorConstants.SQUARE))) {
 			val = Math.pow(arg0, 2.0);
 		} else if (operation.equalsIgnoreCase(CalculatorConstants.CUBE)) {
 			val = Math.pow(arg0, 3.0);

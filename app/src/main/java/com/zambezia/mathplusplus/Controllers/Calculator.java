@@ -12,6 +12,8 @@ import com.zambezia.mathplusplus.Expression.ExpressionEval;
 import com.zambezia.mathplusplus.Expression.ExpressionInput;
 import com.zambezia.mathplusplus.Views.IView;
 
+import static com.zambezia.mathplusplus.Defs.CalculatorConstants.GetActualOperator;
+
 /**
  * Controller class for the View MainActivity View	
  * @author Abdul.Basir
@@ -300,8 +302,8 @@ public class Calculator {
 		}
 		else
 		{
-			if(func.equals("n!"))
-				func = "!";
+
+			func = GetActualOperator(func);
 			inputvalue = func;
 		}
 		

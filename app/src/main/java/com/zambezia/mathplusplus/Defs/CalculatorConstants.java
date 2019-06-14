@@ -3,6 +3,9 @@ package com.zambezia.mathplusplus.Defs;
 import com.zambezia.mathplusplus.App;
 import com.zambezia.mathplusplus.R;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * String literal to display on the View
  * @author Abdul.Basir
@@ -11,6 +14,37 @@ import com.zambezia.mathplusplus.R;
  */
 public class CalculatorConstants {
 
+    private static Map<String,String> mapOperatorDisplayToActual = new HashMap<String, String>(){{
+        put("n!","!");
+        put("x²","²");
+        put("x³","³");
+        put("x⁴","⁴");
+        put("xⁿ","ⁿ");
+        put("ⁿ√x","√");
+    }};
+
+    private static Map<String,String> mapOperatorActualToDisplay = new HashMap<String, String>(){{
+        put("!","n!");
+        put("²","x²");
+        put("³","x³");
+        put("⁴","x⁴");
+        put("ⁿ","xⁿ");
+        put("√","ⁿ√x");
+    }};
+
+    public static boolean IsUnaryOperatorOnRight(String actualSymbol)
+    {
+        boolean isOpRight= false;
+        if(mapOperatorActualToDisplay.containsKey(actualSymbol))
+            isOpRight = true;
+        return isOpRight;
+    }
+	public static String GetActualOperator(String displaySymbol)
+	{
+        if(mapOperatorDisplayToActual.containsKey(displaySymbol))
+            displaySymbol = mapOperatorDisplayToActual.get(displaySymbol);
+		return displaySymbol;
+	}
 	//Operator Constatnts
 	public static final String PLUS = App.R().getString(R.string.symbol_plus);
 	public static final String MINUS = App.R().getString(R.string.symbol_minus);
@@ -34,16 +68,16 @@ public class CalculatorConstants {
 	public static final String SINHI = App.R().getString(R.string.symbol_sinh_inv);
 	public static final String COSHI = App.R().getString(R.string.symbol_cosh_inv);
 	public static final String TANHI = App.R().getString(R.string.symbol_tanh_inv);
-	public static final String FACTORIAL = "!";
+	public static final String FACTORIAL = GetActualOperator(App.R().getString(R.string.symbol_factorial));
 	
-	public static final String SQUARE = App.R().getString(R.string.symbol_square);
-	public static final String CUBE = App.R().getString(R.string.symbol_cube);
-	public static final String QUAD = App.R().getString(R.string.symbol_quad);
+	public static final String SQUARE = GetActualOperator(App.R().getString(R.string.symbol_square));
+	public static final String CUBE = GetActualOperator(App.R().getString(R.string.symbol_cube));
+	public static final String QUAD = GetActualOperator(App.R().getString(R.string.symbol_quad));
 	public static final String SQUARE_ROOT = App.R().getString(R.string.symbol_square_root);
 	public static final String CUBE_ROOT = App.R().getString(R.string.symbol_cube_root);
 	public static final String QUAD_ROOT = App.R().getString(R.string.symbol_quad_root);
-	public static final String N_ROOT = App.R().getString(R.string.symbol_n_root);
-	public static final String N_POWER = App.R().getString(R.string.symbol_pow_n);
+	public static final String N_ROOT = GetActualOperator(App.R().getString(R.string.symbol_n_root));
+	public static final String N_POWER = GetActualOperator(App.R().getString(R.string.symbol_pow_n));
 	public static final String EXP = "e";
 	public static final String PI = App.R().getString(R.string.symbol_pi);
 	public static final String LOG = App.R().getString(R.string.symbol_log);

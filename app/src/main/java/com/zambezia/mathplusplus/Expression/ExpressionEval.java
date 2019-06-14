@@ -14,6 +14,8 @@ import com.zambezia.mathplusplus.Utils.OperatorComparator.OPERATOR_PRIORITY;
 import com.zambezia.mathplusplus.Utils.CalcDebug;
 import com.zambezia.mathplusplus.Utils.CalculatorBrain;
 
+import static com.zambezia.mathplusplus.Defs.CalculatorConstants.IsUnaryOperatorOnRight;
+
 /**
  * Expression transformation mechanism is handled here, all infix to postfix conversion is performed
  * here and the converted expression is solved using CalculatorBrain
@@ -297,6 +299,8 @@ public class ExpressionEval {
 					val = CalculatorBrain.performCalculation(elem.first);
 				}
 				else if (t == OperatorType.BINARY) {
+					if(operationStack.size() != 2)
+                        throw new RuntimeException();
 					arg1 = Double.parseDouble(operationStack.pop().first);
 					pairOperandItem = operationStack.pop();
 					arg0 = Double.parseDouble(pairOperandItem.first);
@@ -304,14 +308,22 @@ public class ExpressionEval {
 					val = CalculatorBrain.performCalculation(elem.first, arg0, arg1);
 				} else if (t == OperatorType.UNARY)
 				{
+					if(operationStack.size() != 1)
+                        throw new RuntimeException();
 					pairOperandItem = operationStack.pop();
 					arg0 = Double.parseDouble(pairOperandItem.first);
-					if ((!elem.first.equals("!") && pairOperandItem.second < elem.second) ||
-							(elem.first.equals("!") && pairOperandItem.second > elem.second))
+					//if it is not one of the unary operators that are supposed to be on the right like factorial(!),square(²) and are one of the
+					//operators supposed to be on the left like sin,cos and the operand index is less than the operator e.g. sin60 and not 60sin.
+					//second case if it is one of the unary operators that are supposed to be on the right like factorial(!),square(²) and not one of the
+					//operators supposed to be on the left like sin,cos and the operand index is greater than the operator e.g. 3! and not !3.
+					if ((!IsUnaryOperatorOnRight(elem.first) && pairOperandItem.second < elem.second) ||
+							(IsUnaryOperatorOnRight(elem.first) && pairOperandItem.second > elem.second))
 						arg0 = Double.parseDouble("Invalid expression");
 					smalIndex = pairOperandItem.second;
 					val = CalculatorBrain.performCalculation(elem.first, arg0);
 				} else if (t == OperatorType.TERNARY) {
+					if(operationStack.size() != 3)
+                        throw new RuntimeException();
 					arg2 = Double.parseDouble(operationStack.pop().first);
 					arg1 = Double.parseDouble(operationStack.pop().first);
 					pairOperandItem = operationStack.pop();

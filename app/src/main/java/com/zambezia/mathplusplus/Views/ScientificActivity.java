@@ -3,6 +3,7 @@ package com.zambezia.mathplusplus.Views;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -204,6 +205,7 @@ public class ScientificActivity extends AppCompatActivity
         output = (TextView) findViewById(R.id.consoleTextView);
         modeview = (TextView) findViewById(R.id.statusMemoryView);
         trigonoModeView = (TextView)findViewById(R.id.trigonoModeView);
+        input.setMovementMethod(new ScrollingMovementMethod());
 
     }
 

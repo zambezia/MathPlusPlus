@@ -10,7 +10,8 @@
     <string name="title_activity_smart_scientific">Smart Scientific Calculator</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="symbol_square_root">√</string>
+    <string name="symbol_factorial">n!</string>
+    <string name="symbol_square_root">²√</string>
     <string name="symbol_cube_root">³√</string>
     <string name="symbol_quad_root">⁴√</string>
     <string name="symbol_n_root">ⁿ√x</string>
