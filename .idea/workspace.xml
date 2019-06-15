@@ -9,7 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/src/main/res/layout/content_scientific.xml" line="550" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/app/src/main/res/layout/content_scientific.xml" line="556" mnemonic="3" />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -17,28 +17,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5de50dbe-eff8-485d-9f56-4e5936c6bb7d" name="Default" comment="text labels moved to string xml file.">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_26_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_26_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_26_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_26_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_26_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_26_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_26_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_26_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_26_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_26_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_26_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_26_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
+    <list default="true" id="5de50dbe-eff8-485d-9f56-4e5936c6bb7d" name="Default" comment="input display units changed to friendly ones like x²3 to 3². vertical scroll also added to handle text going out of input screen.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Controllers/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Controllers/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Defs/CalculatorConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Defs/CalculatorConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionEval.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionEval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Utils/CalculatorBrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Utils/CalculatorBrain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/ScientificActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/ScientificActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SimpleActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SimpleActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_scientific.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_scientific.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_simple.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_simple.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_smart_scientific.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_smart_scientific.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <ignored path="Math++.iws" />
@@ -72,47 +58,48 @@
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="7" />
           <entry key="project.open.time.7" value="9" />
           <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="13" />
-          <entry key="java" value="248" />
+          <entry key="java" value="252" />
           <entry key="png" value="1" />
           <entry key="properties" value="1" />
-          <entry key="xml" value="272" />
+          <entry key="xml" value="278" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="13" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="248" />
+          <entry key="JAVA" value="252" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="272" />
+          <entry key="XML" value="278" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="35" />
-          <entry key="java" value="3585" />
-          <entry key="txt" value="352" />
-          <entry key="xml" value="2838" />
+          <entry key="java" value="3746" />
+          <entry key="txt" value="519" />
+          <entry key="xml" value="3395" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="35" />
-          <entry key="JAVA" value="3585" />
-          <entry key="PLAIN_TEXT" value="352" />
-          <entry key="XML" value="2838" />
+          <entry key="JAVA" value="3746" />
+          <entry key="PLAIN_TEXT" value="519" />
+          <entry key="XML" value="3395" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -131,69 +118,75 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Utils/CalculatorBrain.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_smart_scientific.xml">
+          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="116">
+              <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_scientific.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_simple.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="340" column="5" selection-start-line="340" selection-start-column="5" selection-end-line="340" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;class#CalculatorBrain#0" />
-                <element signature="class#Mode#0;class#CalculatorBrain#0" />
-                <element signature="method#CalculatorBrain#0;class#CalculatorBrain#0" />
-                <element signature="method#NCR#0;class#CalculatorBrain#0" />
-                <element signature="method#NPR#0;class#CalculatorBrain#0" />
-                <element signature="method#sinhi#0;class#CalculatorBrain#0" />
-                <element signature="method#coshi#0;class#CalculatorBrain#0" />
-                <element signature="method#tanhi#0;class#CalculatorBrain#0" />
+                <element signature="e#11878#12065#0" expanded="true" />
+                <element signature="e#12064#12065#0" expanded="true" />
+                <element signature="e#12102#12280#0" expanded="true" />
+                <element signature="e#12279#12280#0" expanded="true" />
+                <element signature="e#12562#12741#0" expanded="true" />
+                <element signature="e#12740#12741#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_smart_scientific.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/ScientificActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="43" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="43" />
+            <state relative-caret-position="127">
+              <caret line="385" column="74" selection-start-line="385" selection-start-column="74" selection-end-line="385" selection-end-column="74" />
             </state>
           </provider>
-          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_scientific.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SimpleActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_simple.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="236" column="59" lean-forward="true" selection-start-line="236" selection-start-column="59" selection-end-line="236" selection-end-column="59" />
+            <state relative-caret-position="127">
+              <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -210,11 +203,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>square</find>
-      <find>unary</find>
-      <find>.UNARY</find>
-      <find>func.equals(&quot;x&quot;)</find>
-      <find>else if(func.equals(&quot;x&quot;))</find>
       <find>if(func.equals</find>
       <find>inputvalue = func;</find>
       <find>n!</find>
@@ -240,6 +228,11 @@
       <find>fill_parent</find>
       <find>style</find>
       <find>input = (TextView) findViewById(R.id.modeTextView);</find>
+      <find>marquee_forever</find>
+      <find>HorizontalScrollView</find>
+      <find>displayExpression</find>
+      <find>input</find>
+      <find>horizontalScrollView</find>
     </findStrings>
     <replaceStrings>
       <replace>BaseActivity</replace>
@@ -2568,21 +2561,21 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Expression/ExpressionEval.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Defs/CalculatorConstants.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SimpleActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/ScientificActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_smart_scientific.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_scientific.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_simple.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/ScientificActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SimpleActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1761" />
-    <option name="y" value="68" />
-    <option name="width" value="1936" />
-    <option name="height" value="1047" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1099" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -2602,7 +2595,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2629,6 +2621,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2978,7 +2971,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560354436431</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="input display units changed to friendly ones like x²3 to 3². vertical scroll also added to handle text going out of input screen.">
+      <created>1560500542683</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1560500542683</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2991,10 +2991,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23667377" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23624161" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Captures" order="3" side_tool="true" weight="0.25" />
@@ -3004,16 +3004,16 @@
       <window_info id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32844576" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.10456062" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.23692992" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5671642" weight="0.32925472" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49653703" weight="0.25842696" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.5442431" weight="0.36484984" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.542953" visible="true" weight="0.36363637" />
       <window_info anchor="bottom" id="Gradle Console" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Android Profiler" order="9" sideWeight="0.49946696" weight="0.32925472" />
       <window_info anchor="bottom" id="Android Monitor" order="10" weight="0.32929516" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" visible="true" weight="0.10456062" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.457047" side_tool="true" visible="true" weight="0.36363637" />
       <window_info anchor="bottom" id="Logcat" order="12" sideWeight="0.71428573" weight="0.487208" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4978678" weight="0.32703003" />
       <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49946696" weight="0.3291714" />
@@ -3106,7 +3106,8 @@
     <MESSAGE value="smart scientific added. original scientific restored with original UI." />
     <MESSAGE value="new buttons added for sin, cos and tan inverse. fixed function for inverse which was returning incorrect result." />
     <MESSAGE value="text labels moved to string xml file." />
-    <option name="LAST_COMMIT_MESSAGE" value="text labels moved to string xml file." />
+    <MESSAGE value="input display units changed to friendly ones like x²3 to 3². vertical scroll also added to handle text going out of input screen." />
+    <option name="LAST_COMMIT_MESSAGE" value="input display units changed to friendly ones like x²3 to 3². vertical scroll also added to handle text going out of input screen." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3138,27 +3139,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-23/android/preference/PreferenceManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="369" selection-start-line="369" selection-end-line="369" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-23/android/app/SharedPreferencesImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="225" selection-start-line="225" selection-end-line="225" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/helper/PreferenceHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/side_nav_bar.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -3166,13 +3146,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/widget/TextView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="303" column="13" selection-start-line="303" selection-start-column="13" selection-end-line="303" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -3216,12 +3189,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-compat/26.1.0/73bfdb5cca1949a51219d3676700996990ea3b52/support-compat-26.1.0-sources.jar!/android/support/v4/view/GravityCompat.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/java/lang/Math.java">
@@ -3249,13 +3222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="77" lean-forward="true" selection-start-line="6" selection-start-column="77" selection-end-line="6" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -3427,6 +3393,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="77" lean-forward="true" selection-start-line="6" selection-start-column="77" selection-end-line="6" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Utils/CalculatorBrain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -3445,57 +3424,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/widget/TextView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="303" column="13" selection-start-line="303" selection-start-column="13" selection-end-line="303" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/IView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SimpleActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/ScientificActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="385" column="74" selection-start-line="385" selection-start-column="74" selection-end-line="385" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+        <state relative-caret-position="178">
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="340" column="5" selection-start-line="340" selection-start-column="5" selection-end-line="340" selection-end-column="5" />
+          <folding>
+            <element signature="e#11878#12065#0" expanded="true" />
+            <element signature="e#12064#12065#0" expanded="true" />
+            <element signature="e#12102#12280#0" expanded="true" />
+            <element signature="e#12279#12280#0" expanded="true" />
+            <element signature="e#12562#12741#0" expanded="true" />
+            <element signature="e#12740#12741#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_smart_scientific.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="43" />
+        <state relative-caret-position="116">
+          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="47" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_scientific.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        <state relative-caret-position="218">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_simple.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="218">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SimpleActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="184" column="63" selection-start-line="184" selection-start-column="63" selection-end-line="184" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/ScientificActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="207" column="63" selection-start-line="207" selection-start-column="63" selection-end-line="207" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="236" column="59" lean-forward="true" selection-start-line="236" selection-start-column="59" selection-end-line="236" selection-end-column="59" />
-        </state>
-      </provider>
     </entry>
   </component>
 </project>

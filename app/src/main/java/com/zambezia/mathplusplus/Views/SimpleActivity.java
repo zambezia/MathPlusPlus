@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.HorizontalScrollView;
 import android.widget.TextView;
 
 import com.zambezia.mathplusplus.CalculatorType;
@@ -37,6 +38,7 @@ public class SimpleActivity extends AppCompatActivity
             point;
 
     private TextView input, output, modeview, trigonoModeView;
+    private HorizontalScrollView horizontalScrollView;
     private Calculator calculator;
 
     String[] expression = { CalculatorConstants.POWER_e_n, "30" };
@@ -182,8 +184,7 @@ public class SimpleActivity extends AppCompatActivity
         input = (TextView) findViewById(R.id.modeTextView);
         modeview = (TextView) findViewById(R.id.statusMemoryView);
         output = (TextView) findViewById(R.id.consoleTextView);
-        input.setMovementMethod(new ScrollingMovementMethod());
-
+        horizontalScrollView = (HorizontalScrollView)findViewById(R.id.horizontalScrollView);
     }
 
     public void SetListeners()
@@ -267,6 +268,7 @@ public class SimpleActivity extends AppCompatActivity
     @Override
     public void displayExpression(String expression) {
         input.setText(expression);
+        horizontalScrollView.fullScroll(HorizontalScrollView.FOCUS_RIGHT);
     }
 
     @Override
