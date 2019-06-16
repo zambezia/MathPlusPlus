@@ -299,8 +299,8 @@ public class ExpressionEval {
 					val = CalculatorBrain.performCalculation(elem.first);
 				}
 				else if (t == OperatorType.BINARY) {
-					if(operationStack.size() != 2)
-                        throw new RuntimeException();
+//					if(operationStack.size() != 2)
+//                        throw new RuntimeException();
 					arg1 = Double.parseDouble(operationStack.pop().first);
 					pairOperandItem = operationStack.pop();
 					arg0 = Double.parseDouble(pairOperandItem.first);
@@ -308,8 +308,8 @@ public class ExpressionEval {
 					val = CalculatorBrain.performCalculation(elem.first, arg0, arg1);
 				} else if (t == OperatorType.UNARY)
 				{
-					if(operationStack.size() != 1)
-                        throw new RuntimeException();
+//					if(operationStack.size() != 1)
+//                        throw new RuntimeException();
 					pairOperandItem = operationStack.pop();
 					arg0 = Double.parseDouble(pairOperandItem.first);
 					//if it is not one of the unary operators that are supposed to be on the right like factorial(!),square(²) and are one of the
@@ -322,8 +322,8 @@ public class ExpressionEval {
 					smalIndex = pairOperandItem.second;
 					val = CalculatorBrain.performCalculation(elem.first, arg0);
 				} else if (t == OperatorType.TERNARY) {
-					if(operationStack.size() != 3)
-                        throw new RuntimeException();
+//					if(operationStack.size() != 3)
+//                        throw new RuntimeException();
 					arg2 = Double.parseDouble(operationStack.pop().first);
 					arg1 = Double.parseDouble(operationStack.pop().first);
 					pairOperandItem = operationStack.pop();
