@@ -299,8 +299,6 @@ public class ExpressionEval {
 					val = CalculatorBrain.performCalculation(elem.first);
 				}
 				else if (t == OperatorType.BINARY) {
-//					if(operationStack.size() != 2)
-//                        throw new RuntimeException();
 					arg1 = Double.parseDouble(operationStack.pop().first);
 					pairOperandItem = operationStack.pop();
 					arg0 = Double.parseDouble(pairOperandItem.first);
@@ -308,8 +306,6 @@ public class ExpressionEval {
 					val = CalculatorBrain.performCalculation(elem.first, arg0, arg1);
 				} else if (t == OperatorType.UNARY)
 				{
-//					if(operationStack.size() != 1)
-//                        throw new RuntimeException();
 					pairOperandItem = operationStack.pop();
 					arg0 = Double.parseDouble(pairOperandItem.first);
 					//if it is not one of the unary operators that are supposed to be on the right like factorial(!),square(²) and are one of the
@@ -322,8 +318,6 @@ public class ExpressionEval {
 					smalIndex = pairOperandItem.second;
 					val = CalculatorBrain.performCalculation(elem.first, arg0);
 				} else if (t == OperatorType.TERNARY) {
-//					if(operationStack.size() != 3)
-//                        throw new RuntimeException();
 					arg2 = Double.parseDouble(operationStack.pop().first);
 					arg1 = Double.parseDouble(operationStack.pop().first);
 					pairOperandItem = operationStack.pop();
@@ -339,7 +333,10 @@ public class ExpressionEval {
 		}
 
 		val = Double.parseDouble(operationStack.pop().first);
-
+		//operation stack should be empty after expression evaluation.
+		//check to prevent evaluation of 2sin60 which was evaluating to and returning val of sin60 with 2 remaining in stack.
+		if(operationStack.size() > 0)
+			throw new RuntimeException();
 		CalcDebug.Debug("val = " + val);
 
 		return val;
