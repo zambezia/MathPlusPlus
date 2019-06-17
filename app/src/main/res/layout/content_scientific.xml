@@ -77,46 +77,6 @@
             android:layout_height="wrap_content"
             android:paddingTop="5dp" >
 
-            <TableRow android:gravity="center_horizontal"
-                android:layout_width="wrap_content">
-
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_weight="1"
-                    android:gravity="center_horizontal"
-                    android:text=""
-                    android:textSize="@dimen/secondary_textview_text_size" />
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:gravity="center_horizontal"
-                    android:text="^"
-                    android:textSize="@dimen/secondary_textview_text_size" />
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:gravity="center_horizontal"
-                    android:text="^"
-                    android:textSize="@dimen/secondary_textview_text_size" />
-
-                <TextView
-                    android:id="@+id/textView13"
-                    android:gravity="center_horizontal"
-                    android:text="^"
-                    android:textSize="@dimen/secondary_textview_text_size" />
-
-                <TextView
-                    android:id="@+id/textView14"
-                    android:gravity="center_horizontal"
-                    android:text="^"
-                    android:textSize="@dimen/secondary_textview_text_size" />
-
-                <TextView
-                    android:id="@+id/textView15"
-                    android:gravity="center_horizontal"
-                    android:text="^"
-                    android:textSize="@dimen/secondary_textview_text_size" />
-            </TableRow>
 
             <TableRow android:gravity="center_horizontal" >
 
@@ -737,6 +697,9 @@
                     android:textSize="@dimen/secondary_button_text_size"
                     android:textStyle="bold" />
             </TableRow>
+
+
+
         </TableLayout>
 
         <TableLayout
@@ -744,6 +707,50 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="5dp" >
+
+            <TableRow android:gravity="center_horizontal" >
+
+                <Button
+                    android:layout_width="@dimen/primary_button_size_width"
+                    android:layout_height="@dimen/primary_button_size_height"
+                    android:background="@color/colorAccent"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textSize="@dimen/primary_button_text_size" />
+
+                <Button
+                    android:layout_width="@dimen/primary_button_size_width"
+                    android:layout_height="@dimen/primary_button_size_height"
+                    android:background="@color/colorAccent"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textSize="@dimen/primary_button_text_size" />
+
+                <Button
+                    android:layout_width="@dimen/primary_button_size_width"
+                    android:layout_height="@dimen/primary_button_size_height"
+                    android:background="@color/colorAccent"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textSize="@dimen/primary_button_text_size" />
+
+                <Button
+                    android:id="@+id/backSpace"
+                    android:layout_width="@dimen/primary_button_size_width"
+                    android:layout_height="@dimen/primary_button_size_height"
+                    android:gravity="center_horizontal"
+                    android:text="@string/symbol_back_space"
+                    android:textSize="@dimen/primary_button_text_size" />
+
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="@dimen/primary_button_size_width"
+                    android:layout_height="@dimen/primary_button_size_height"
+                    android:gravity="center_horizontal"
+                    android:text="@string/symbol_delete"
+                    android:textSize="@dimen/primary_button_text_size" />
+
+            </TableRow>
 
             <TableRow android:gravity="center_horizontal" >
 

@@ -212,7 +212,19 @@ public class Calculator {
 	public void clearMath() {
 		this.mathexp.clear();
 	}
-	
+
+	public void removeLastEntry() {
+		this.mathexp.removeLastEntry();
+		this.expCreator.removeLastEntry();
+        calcView.displayExpression(this.mathexp.getOutput());
+	}
+
+	public void removeFirstEntry() {
+		this.mathexp.removeFirstEntry();
+		this.expCreator.removeFirstEntry();
+		calcView.displayExpression(this.mathexp.getOutput());
+	}
+
 	public void appendMath(String s) {
 		boolean isExpressionAppended =false;
 		//append last valid result if it is the start of a new input expression and the entry is an operator
@@ -302,7 +314,6 @@ public class Calculator {
 		}
 		else
 		{
-
 			func = GetActualOperator(func);
 			inputvalue = func;
 		}
@@ -344,6 +355,12 @@ public class Calculator {
 			ans = solveExpression("→" + inputvalue);
 			this.operateOnMemory(ans, false);
 		}
+		else if(inputvalue.equals(CalculatorConstants.BACKSPACE)) {
+			this.removeLastEntry();
+		}
+        else if(inputvalue.equals(CalculatorConstants.DELETE)) {
+            this.removeFirstEntry();
+        }
 		else
 		{
 			this.appendMath(inputvalue);

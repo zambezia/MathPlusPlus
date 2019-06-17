@@ -292,6 +292,15 @@
                     android:id="@+id/buttonNRoot"
                     android:text="@string/symbol_n_root"
                     style="@style/SimpleButton" />
+                <Button
+                    android:id="@+id/buttonBackSpace"
+                    android:text="@string/symbol_back_space"
+                    style="@style/SimpleButton" />
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:text="@string/symbol_delete"
+                    style="@style/SimpleButton" />
+
 
             </LinearLayout>
 

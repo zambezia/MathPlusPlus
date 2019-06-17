@@ -70,7 +70,14 @@ public class ExpressionCreator {
 	public void clear() {
 		this.exprList.clear();
 	}
-	
+	public void removeLastEntry() {
+		if(this.exprList.size()>0)
+			this.exprList.remove(this.exprList.size()-1);
+	}
+    public void removeFirstEntry() {
+        if(this.exprList.size()>0)
+            this.exprList.remove(0);
+    }
 	private void handlePoint() {
 		
 		if (exprList.size() >= 1)

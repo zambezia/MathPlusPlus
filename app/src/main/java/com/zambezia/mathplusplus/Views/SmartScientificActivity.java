@@ -39,7 +39,7 @@ public class SmartScientificActivity extends AppCompatActivity
     private Button one, two, three, four, five, six, seven, eight, nine, zero, plus, minus, div, mul, equal,
             leftparentheses, rightparentheses,
             square, cube, squareRoot, cubeRoot, quadRoot, nRoot, ac, point, sin, cos, tan,  sinInv, cosInv, tanInv, sinH, cosH, tanH,  sinHInv, cosHInv, tanHInv,
-            log, ln, pow, exp, exp1, inv, negation,fact;
+            log, ln, pow, exp, exp1, inv, negation, fact, backSpace, delete;
     private Button trigMode, pi, _10ExpN;
 
     private TextView input, output, modeview, trigonoModeView;
@@ -214,6 +214,8 @@ public class SmartScientificActivity extends AppCompatActivity
         _10ExpN = (Button) findViewById(R.id.button_10ExpN);
         exp1 = (Button) findViewById(R.id.buttonExp1);
         fact = (Button) findViewById(R.id.buttonFact);
+        backSpace = (Button) findViewById(R.id.buttonBackSpace);
+        delete = (Button) findViewById(R.id.buttonDelete);
         input = (TextView) findViewById(R.id.modeTextView);
         output = (TextView) findViewById(R.id.consoleTextView);
         modeview = (TextView) findViewById(R.id.statusMemoryView);
@@ -279,6 +281,8 @@ public class SmartScientificActivity extends AppCompatActivity
         exp1.setOnClickListener(handler1_OnClickListener);
         _10ExpN.setOnClickListener(handler1_OnClickListener);
         fact.setOnClickListener(handler1_OnClickListener);
+        backSpace.setOnClickListener(handler1_OnClickListener);
+        delete.setOnClickListener(handler1_OnClickListener);
         point.setOnClickListener(new View.OnClickListener()
         {
 

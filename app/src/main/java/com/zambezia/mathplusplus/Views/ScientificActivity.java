@@ -35,7 +35,7 @@ public class ScientificActivity extends AppCompatActivity
 
     private DrawerLayout drawer;
     private Button one, two, three, four, five, six, seven, eight, nine, zero, plus, minus, div, mul, equal, leftparentheses, rightparentheses, square, cube, squareRoot, ac,
-            point, sin, cos, tan, log, ln, secondfun, alpha, hyp, pow, negation, exp;
+            point, sin, cos, tan, log, ln, secondfun, alpha, hyp, pow, negation, exp, backSpace, delete;
     private Button trigMode;
     private Button store;
     private Button recall;
@@ -203,6 +203,8 @@ public class ScientificActivity extends AppCompatActivity
         recall = (Button) findViewById(R.id.buttonRecall);
         memory = (Button) findViewById(R.id.buttonMemory);
         trigMode = (Button) findViewById(R.id.buttonTrigMode);
+        backSpace = (Button) findViewById(R.id.backSpace);
+        delete = (Button) findViewById(R.id.buttonDelete);
 
         input = (TextView) findViewById(R.id.modeTextView);
         output = (TextView) findViewById(R.id.consoleTextView);
@@ -252,7 +254,8 @@ public class ScientificActivity extends AppCompatActivity
         cos.setOnClickListener(handler1_OnClickListener);
         tan.setOnClickListener(handler1_OnClickListener);
         exp.setOnClickListener(handler1_OnClickListener);
-
+        backSpace.setOnClickListener(handler1_OnClickListener);
+        delete.setOnClickListener(handler1_OnClickListener);
         point.setOnClickListener(new View.OnClickListener()
         {
 

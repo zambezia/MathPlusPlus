@@ -39,4 +39,16 @@ public class ExpressionInput {
 		CalcDebug.Debug("clear");
 		this.output = "";
 	}
+
+	public void removeLastEntry() {
+		CalcDebug.Debug("remove last entry");
+		if(this.output.length()>0)
+			this.output = this.output.substring(0,this.output.length()-1);
+	}
+
+    public void removeFirstEntry() {
+        CalcDebug.Debug("remove first entry");
+        if(this.output.length()>0)
+            this.output = this.output.substring(1,this.output.length());
+    }
 }

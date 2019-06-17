@@ -93,6 +93,8 @@ public class CalculatorConstants {
 	public static final String OR = "or";
 	public static final String XOR = "xor";
 	public static final String NOT = "not";
+	public static final String BACKSPACE = App.R().getString(R.string.symbol_back_space);
+	public static final String DELETE = App.R().getString(R.string.symbol_delete);
 	
 	public static String[] OPERATORS = {PLUS, MINUS, MULTIPLY, DIVIDE, NEGATION, MOD, LEFT_PARAN,
 		RIGHT_PARAN, SINHI, COSHI, TANHI, SINH, COSH, TANH, SINI, COSI, TANI, SIN, COS, TAN, FACTORIAL,

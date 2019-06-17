@@ -35,7 +35,7 @@ public class SimpleActivity extends AppCompatActivity
 
     private DrawerLayout drawer;
     private Button one, two, three, four, five, six, seven, eight, nine, zero, plus, minus, div, mul, equal, leftparentheses, rightparentheses, ac,
-            point;
+            point, backSpace, delete;
 
     private TextView input, output, modeview, trigonoModeView;
     private HorizontalScrollView horizontalScrollView;
@@ -185,6 +185,8 @@ public class SimpleActivity extends AppCompatActivity
         modeview = (TextView) findViewById(R.id.statusMemoryView);
         output = (TextView) findViewById(R.id.consoleTextView);
         horizontalScrollView = (HorizontalScrollView)findViewById(R.id.horizontalScrollView);
+        backSpace = (Button) findViewById(R.id.buttonBackSpace);
+        delete = (Button) findViewById(R.id.buttonDelete);
     }
 
     public void SetListeners()
@@ -217,7 +219,8 @@ public class SimpleActivity extends AppCompatActivity
         div.setOnClickListener(handler1_OnClickListener);
         leftparentheses.setOnClickListener(handler1_OnClickListener);
         rightparentheses.setOnClickListener(handler1_OnClickListener);
-
+        backSpace.setOnClickListener(handler1_OnClickListener);
+        delete.setOnClickListener(handler1_OnClickListener);
         point.setOnClickListener(new View.OnClickListener()
         {
 

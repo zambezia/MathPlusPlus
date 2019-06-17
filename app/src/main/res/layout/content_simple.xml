@@ -62,14 +62,30 @@
     </LinearLayout>
 
 
-    <TableLayout
+    <LinearLayout
         android:id="@+id/primaryOperationsTableLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:weightSum="5"
-        android:stretchColumns="0,1,2,3,4">
+        android:orientation="vertical">
 
-        <TableRow android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/buttonBackSpace"
+                android:text="@string/symbol_back_space"
+                style="@style/SimpleButton" />
+            <Button
+                android:id="@+id/buttonDelete"
+                android:text="@string/symbol_delete"
+                style="@style/SimpleButton" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
             <Button
                 android:id="@+id/buttonLeftparentheses"
                 style="@style/SimpleButton"
@@ -86,9 +102,12 @@
                 android:id="@+id/buttonDiv"
                 style="@style/SimpleButton"
                 android:text="÷" />
-        </TableRow>
+        </LinearLayout>
 
-        <TableRow android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
             <Button
                 android:id="@+id/buttonSeven"
                 style="@style/SimpleButton"
@@ -107,9 +126,12 @@
                 android:id="@+id/buttonMul"
                 style="@style/SimpleButton"
                 android:text="*" />
-        </TableRow>
+        </LinearLayout>
 
-        <TableRow android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/buttonFour"
@@ -130,9 +152,12 @@
                 style="@style/SimpleButton"
                 android:text="+" />
 
-        </TableRow>
+        </LinearLayout>
 
-        <TableRow android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
 
             <Button
@@ -154,9 +179,12 @@
                 android:id="@+id/buttonMinus"
                 style="@style/SimpleButton"
                 android:text="-" />
-        </TableRow>
+        </LinearLayout>
 
-        <TableRow android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
             <Button
                 android:id="@+id/buttonNegation"
                 style="@style/SimpleButton"
@@ -176,8 +204,8 @@
                 android:id="@+id/buttonEqual"
                 style="@style/SimpleButton"
                 android:text="=" />
-        </TableRow>
+        </LinearLayout>
 
-    </TableLayout>
+    </LinearLayout>
 
 </LinearLayout>
