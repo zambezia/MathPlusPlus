@@ -301,9 +301,7 @@ public class Calculator {
 	{
 		String inputvalue = "";
 		double ans = 0.0;
-		
-		if (calculationDone){ this.newCalculation(); }
-		
+
 		if (this.getInputMode() == InputMode.SHIFT)
 		{
 			inputvalue = buttonvalues.getModeValue(func, CalculatorConstants.SECOND_FUN);
@@ -317,8 +315,11 @@ public class Calculator {
 			func = GetActualOperator(func);
 			inputvalue = func;
 		}
-		
-		if (inputvalue == null || inputvalue.equals("")) {
+
+        if (calculationDone && !inputvalue.equals(CalculatorConstants.BACKSPACE) && !inputvalue.equals(CalculatorConstants.DELETE) ){ this.newCalculation(); }
+
+
+        if (inputvalue == null || inputvalue.equals("")) {
 			CalcDebug.Debug("Strange, inputvalue empty...");
 			resetSpecialFunctions();
 			return;
