@@ -17,9 +17,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5de50dbe-eff8-485d-9f56-4e5936c6bb7d" name="Default" comment="autoresize textsize implemented for simple and smart scientific calculators. the text takes the smallest size that fits of the height and width within the percentage specified e.g. 70% of the dimension (width/height).">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/BaseActivity.java" afterDir="false" />
-    </list>
+    <list default="true" id="5de50dbe-eff8-485d-9f56-4e5936c6bb7d" name="Default" comment="function rename." />
     <ignored path="Math++.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,7 +63,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="13" />
-          <entry key="java" value="351" />
+          <entry key="java" value="352" />
           <entry key="png" value="1" />
           <entry key="properties" value="2" />
           <entry key="xml" value="338" />
@@ -75,7 +73,7 @@
         <counts>
           <entry key="Groovy" value="13" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="351" />
+          <entry key="JAVA" value="352" />
           <entry key="Properties" value="2" />
           <entry key="XML" value="338" />
         </counts>
@@ -84,7 +82,7 @@
         <counts>
           <entry key="gradle" value="35" />
           <entry key="java" value="8009" />
-          <entry key="txt" value="1156" />
+          <entry key="txt" value="1172" />
           <entry key="xml" value="3790" />
         </counts>
       </usages-collector>
@@ -92,7 +90,7 @@
         <counts>
           <entry key="Groovy" value="35" />
           <entry key="JAVA" value="8009" />
-          <entry key="PLAIN_TEXT" value="1156" />
+          <entry key="PLAIN_TEXT" value="1172" />
           <entry key="XML" value="3790" />
         </counts>
       </usages-collector>
@@ -117,6 +115,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4233">
               <caret line="295" column="62" selection-start-line="295" selection-start-column="62" selection-end-line="295" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/helper/PreferenceHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="118" column="58" selection-start-line="118" selection-start-column="58" selection-end-line="118" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -148,11 +155,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/BaseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            <state relative-caret-position="221">
+              <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -255,6 +262,9 @@
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
     </option>
   </component>
   <component name="GradleLocalSettings">
@@ -3033,7 +3043,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561040620533</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="function rename.">
+      <created>1561041352212</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1561041352213</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3046,7 +3063,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -3056,7 +3073,7 @@
       <window_info id="Favorites" order="4" sideWeight="0.5021834" side_tool="true" weight="0.23624161" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Palette&#9;" order="6" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49769586" visible="true" weight="0.23667377" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49769586" visible="true" weight="0.23667377" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32814237" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.23692992" />
@@ -3064,11 +3081,11 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49653703" weight="0.25842696" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.5416107" weight="0.36262515" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.5410448" weight="0.36262515" />
       <window_info anchor="bottom" id="Gradle Console" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Android Profiler" order="9" sideWeight="0.49946696" weight="0.32925472" />
       <window_info anchor="bottom" id="Android Monitor" order="10" weight="0.32929516" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.45895523" side_tool="true" visible="true" weight="0.36262515" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="11" sideWeight="0.45895523" side_tool="true" visible="true" weight="0.36262515" />
       <window_info anchor="bottom" id="Logcat" order="12" sideWeight="0.71428573" weight="0.487208" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.52025586" visible="true" weight="0.32703003" />
       <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49946696" weight="0.3291714" />
@@ -3169,7 +3186,8 @@
     <MESSAGE value="back space and delete functionality added." />
     <MESSAGE value="issue fixed where back space and delete would clear entire input expression screen after '=' is pressed." />
     <MESSAGE value="autoresize textsize implemented for simple and smart scientific calculators. the text takes the smallest size that fits of the height and width within the percentage specified e.g. 70% of the dimension (width/height)." />
-    <option name="LAST_COMMIT_MESSAGE" value="autoresize textsize implemented for simple and smart scientific calculators. the text takes the smallest size that fits of the height and width within the percentage specified e.g. 70% of the dimension (width/height)." />
+    <MESSAGE value="function rename." />
+    <option name="LAST_COMMIT_MESSAGE" value="function rename." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3461,13 +3479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/helper/PreferenceHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1139">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/helper/TextResizeHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1904">
@@ -3537,8 +3548,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/BaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        <state relative-caret-position="221">
+          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/helper/PreferenceHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="118" column="58" selection-start-line="118" selection-start-column="58" selection-end-line="118" selection-end-column="58" />
         </state>
       </provider>
     </entry>
