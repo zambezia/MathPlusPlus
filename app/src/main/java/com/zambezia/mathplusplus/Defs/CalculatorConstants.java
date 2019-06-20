@@ -61,7 +61,7 @@ public class CalculatorConstants {
 	public static final String COSI = App.R().getString(R.string.symbol_cos_inv);
 	public static final String TANI = App.R().getString(R.string.symbol_tan_inv);
 	public static final String HYP = "hyp";
-	public static final String HYPI = "hyp-\u00B9";
+	public static final String HYPI = "hyp⁻¹";
 	public static final String SINH = App.R().getString(R.string.symbol_sinh);
 	public static final String COSH = App.R().getString(R.string.symbol_cosh);
 	public static final String TANH = App.R().getString(R.string.symbol_tanh);

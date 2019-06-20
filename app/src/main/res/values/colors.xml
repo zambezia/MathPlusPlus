@@ -7,6 +7,4 @@
     <color name="colorBorder">#000000</color>
     <color name="red">#FF0000</color>
     <color name="colorLightBlue">#0dd8ff</color>
-    <color name="colorTextLeft">#FFFF66</color>
-    <color name="colorTextRight">#3498DB</color>
 </resources>

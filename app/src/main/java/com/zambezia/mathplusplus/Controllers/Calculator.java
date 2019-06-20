@@ -316,6 +316,7 @@ public class Calculator {
 			inputvalue = func;
 		}
 
+		//do not clear input screen once '=' is pressed in case back s[cae or delete is pressed afterwards
         if (calculationDone && !inputvalue.equals(CalculatorConstants.BACKSPACE) && !inputvalue.equals(CalculatorConstants.DELETE) ){ this.newCalculation(); }
 
 

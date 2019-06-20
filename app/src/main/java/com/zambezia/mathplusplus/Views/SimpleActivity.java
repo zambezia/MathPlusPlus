@@ -21,6 +21,7 @@ import com.zambezia.mathplusplus.CalculatorType;
 import com.zambezia.mathplusplus.Defs.CalculatorConstants;
 import com.zambezia.mathplusplus.Controllers.Calculator;
 import com.zambezia.mathplusplus.R;
+import com.zambezia.mathplusplus.helper.TextResizeHelper;
 import com.zambezia.mathplusplus.singleton.PreferenceHelperSingleton;
 
 /**
@@ -54,6 +55,11 @@ public class SimpleActivity extends AppCompatActivity
         }
     };
 
+    @Override
+    public void onWindowFocusChanged (boolean hasFocus)
+    {
+        TextResizeHelper.resizeButtonText(this, 0.25F);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

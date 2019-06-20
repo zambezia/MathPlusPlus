@@ -1,6 +1,11 @@
 package com.zambezia.mathplusplus.Views;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
@@ -14,8 +19,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
@@ -23,7 +30,11 @@ import com.zambezia.mathplusplus.CalculatorType;
 import com.zambezia.mathplusplus.Defs.CalculatorConstants;
 import com.zambezia.mathplusplus.Controllers.Calculator;
 import com.zambezia.mathplusplus.R;
+import com.zambezia.mathplusplus.helper.TextResizeHelper;
 import com.zambezia.mathplusplus.singleton.PreferenceHelperSingleton;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Main view of the app, hosts the calculator button commands and allow user to interact with Math
@@ -60,6 +71,11 @@ public class SmartScientificActivity extends AppCompatActivity
         }
     };
 
+    @Override
+    public void onWindowFocusChanged (boolean hasFocus)
+    {
+        TextResizeHelper.resizeButtonText(this, 0.6F);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

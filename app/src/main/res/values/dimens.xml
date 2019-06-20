@@ -8,19 +8,16 @@
     <dimen name="fab_margin">6dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="secondary_textview_text_size">9dip</dimen>
-    <dimen name="secondary_textview_size_height">11dip</dimen>
+    <dimen name="secondary_textview_height_size">11dip</dimen>
     <dimen name="secondary_button_text_size">10dip</dimen>
-    <dimen name="secondary_button_size_height">32dip</dimen>
-    <dimen name="secondary_button_size_width">48dip</dimen>
+    <dimen name="secondary_button_height_size">32dip</dimen>
+    <dimen name="secondary_button_width_size">48dip</dimen>
     <dimen name="primary_textview_text_size">10dip</dimen>
-    <dimen name="primary_textview_size_height">13dip</dimen>
+    <dimen name="primary_textview_height_size">13dip</dimen>
     <dimen name="primary_button_text_size">14dip</dimen>
-    <dimen name="primary_button_size_height">40dip</dimen>
-    <dimen name="primary_button_size_width">58dip</dimen>
-    <dimen name="simple_textview_text_size">10dip</dimen>
-    <dimen name="simple_textview_size_height">13dip</dimen>
-    <dimen name="simple_button_text_size">25dip</dimen>
-    <dimen name="simple_button_size_height">40dip</dimen>
-    <dimen name="simple_button_size_width">72dip</dimen>
-
+    <dimen name="primary_button_height_size">40dip</dimen>
+    <dimen name="primary_button_width_size">58dip</dimen>
+    <dimen name="input_textview_height_size">16dip</dimen>
+    <dimen name="input_textview_text_size">14sp</dimen>
+    <dimen name="simple_style_text_size">15sp</dimen>
 </resources>
