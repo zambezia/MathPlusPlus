@@ -19,7 +19,7 @@ class TextBound
     public float buttonTextSize;
     public String buttonText;
     public Button button;
-};
+}; 
 
 public class TextResizeHelper {
 

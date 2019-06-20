@@ -21,7 +21,7 @@ public class BaseActivity extends AppCompatActivity {
             intent = new Intent(this,ScientificActivity.class);
         }
         else if (PreferenceHelperSingleton.getInstance().getCurrentCalculatorType() == CalculatorType.SMARTSCIENTIFIC) {
-            intent = new Intent(this,SmartScientificActivity.class);
+            intent = new Intent(this,SmartScientificActivity.class); 
         }
         else {
             intent = new Intent(this,SimpleActivity.class);
