@@ -74,7 +74,26 @@ public class SmartScientificActivity extends AppCompatActivity
     @Override
     public void onWindowFocusChanged (boolean hasFocus)
     {
-        TextResizeHelper.resizeButtonText(this, 0.6F);
+        if(hasFocus) {
+            TextResizeHelper textResizeHelper = new TextResizeHelper();
+            LinearLayout layout = findViewById(R.id.secondaryOperationsTableLayout);
+            float textSizeSecondary = PreferenceHelperSingleton.getInstance().getSmartScientificCalculatorSecondaryTextSize();
+            if (textSizeSecondary == -1) {
+                float scaledDensity = getResources().getDisplayMetrics().scaledDensity;
+                textSizeSecondary = textResizeHelper.getCorrectedButtonTextSize(layout, scaledDensity, 0.6F);
+                PreferenceHelperSingleton.getInstance().setSmartScientificCalculatorSecondaryTextSize(textSizeSecondary);
+            }
+            textResizeHelper.setCorrectedButtonTextSize(textSizeSecondary, layout);
+
+            layout = findViewById(R.id.primaryOperationsTableLayout);
+            float textSizePrimary = PreferenceHelperSingleton.getInstance().getSmartScientificCalculatorPrimaryTextSize();
+            if (textSizePrimary == -1) {
+                float scaledDensity = getResources().getDisplayMetrics().scaledDensity;
+                textSizePrimary = textResizeHelper.getCorrectedButtonTextSize(layout, scaledDensity, 0.30F);
+                PreferenceHelperSingleton.getInstance().setSmartScientificCalculatorPrimaryTextSize(textSizePrimary);
+            }
+            textResizeHelper.setCorrectedButtonTextSize(textSizePrimary, layout);
+        }
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -45,6 +45,9 @@ public final class PreferenceHelper {
 	public static final String CONFIG_RATING_REQUESTED = "rating.requested";
 	public static final String LIC_SHRED_JOB_COUNT = "shredjob.count";
 	public static final String CURRENT_CALCULATOR = "calculator.current";
+    public static final String TEXT_SIZE_SIMPLE_CALC = "calculator.simple.text_size";
+    public static final String TEXT_SIZE_SECONDARY_SMART_SCIENTIFIC ="calculator.smart_scientific.secondary_text_size";
+	public static final String TEXT_SIZE_PRIMARY_SMART_SCIENTIFIC ="calculator.smart_scientific.primary_text_size";
 
 	private String EULA_PREFIX = "eula_";
 
@@ -105,7 +108,7 @@ public final class PreferenceHelper {
 //		return editor.commit();
 //	}
 
-	public CalculatorType getCurentCalculatorType() {
+	public CalculatorType getCurrentCalculatorType() {
 		String strCallType = PreferenceManager.getDefaultSharedPreferences(m_appContext)
 				.getString(CURRENT_CALCULATOR, "");
 		return CalculatorType.stringToEnum(strCallType);
@@ -117,6 +120,46 @@ public final class PreferenceHelper {
 		editor.apply();
 		return;
 	}
+
+    public float getSimpleCalculatorTextSize() {
+        float textSize = PreferenceManager.getDefaultSharedPreferences(m_appContext)
+                .getFloat(TEXT_SIZE_SIMPLE_CALC, -1);
+        return textSize;
+    }
+
+    public void setSimpleCalculatorTextSize(float textSize){
+        SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(m_appContext).edit();
+        editor.putFloat(TEXT_SIZE_SIMPLE_CALC, textSize);
+        editor.apply();
+        return;
+    }
+
+    public float getSmartScientificCalculatorSecondaryTextSize() {
+        float textSize = PreferenceManager.getDefaultSharedPreferences(m_appContext)
+                .getFloat(TEXT_SIZE_SECONDARY_SMART_SCIENTIFIC, -1);
+        return textSize;
+    }
+
+    public void setSmartScientificCalculatorSecondaryTextSize(float textSize){
+        SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(m_appContext).edit();
+        editor.putFloat(TEXT_SIZE_SECONDARY_SMART_SCIENTIFIC, textSize);
+        editor.apply();
+        return;
+    }
+
+    public float getSmartScientificCalculatorPrimaryTextSize() {
+        float textSize = PreferenceManager.getDefaultSharedPreferences(m_appContext)
+                .getFloat(TEXT_SIZE_PRIMARY_SMART_SCIENTIFIC, -1);
+        return textSize;
+    }
+
+    public void setSmartScientificCalculatorPrimaryTextSize(float textSize){
+        SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(m_appContext).edit();
+        editor.putFloat(TEXT_SIZE_PRIMARY_SMART_SCIENTIFIC, textSize);
+        editor.apply();
+        return;
+    }
+
 	public File getDefaultDirectory() {
 		String dirPath = PreferenceManager.getDefaultSharedPreferences(m_appContext)
 				.getString(PREF_HOME_DIR, "/");

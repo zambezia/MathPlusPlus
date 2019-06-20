@@ -1,5 +1,6 @@
 package com.zambezia.mathplusplus.Views;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -15,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.zambezia.mathplusplus.CalculatorType;
@@ -58,7 +60,17 @@ public class SimpleActivity extends AppCompatActivity
     @Override
     public void onWindowFocusChanged (boolean hasFocus)
     {
-        TextResizeHelper.resizeButtonText(this, 0.25F);
+        if(hasFocus) {
+            TextResizeHelper textResizeHelper = new TextResizeHelper();
+            LinearLayout layout = findViewById(R.id.primaryOperationsTableLayout);
+            float textSize = PreferenceHelperSingleton.getInstance().getSimpleCalculatorTextSize();
+            if (textSize == -1) {
+                float scaledDensity = getResources().getDisplayMetrics().scaledDensity;
+                textSize = textResizeHelper.getCorrectedButtonTextSize(layout, scaledDensity, 0.3F);
+                PreferenceHelperSingleton.getInstance().setSimpleCalculatorTextSize(textSize);
+            }
+            textResizeHelper.setCorrectedButtonTextSize(textSize, layout);
+        }
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
