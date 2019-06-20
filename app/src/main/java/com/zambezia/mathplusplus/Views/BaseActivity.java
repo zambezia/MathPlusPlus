@@ -27,7 +27,7 @@ public class BaseActivity extends AppCompatActivity {
             intent = new Intent(this,SimpleActivity.class);
         }
         startActivity(intent);
-        finish();
+        finish();  
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_base);
     }
