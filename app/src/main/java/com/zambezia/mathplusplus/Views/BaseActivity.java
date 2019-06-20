@@ -17,11 +17,11 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Intent intent;
-        if (PreferenceHelperSingleton.getInstance().getCurentCalculatorType() == CalculatorType.SCIENTIFIC) {
+        if (PreferenceHelperSingleton.getInstance().getCurrentCalculatorType() == CalculatorType.SCIENTIFIC) {
             intent = new Intent(this,ScientificActivity.class);
         }
-        else if (PreferenceHelperSingleton.getInstance().getCurentCalculatorType() == CalculatorType.SMARTSCIENTIFIC) {
-            intent = new Intent(this,SmartScientificActivity.class);
+        else if (PreferenceHelperSingleton.getInstance().getCurrentCalculatorType() == CalculatorType.SMARTSCIENTIFIC) {
+            intent = new Intent(this,SmartScientificActivity.class); 
         }
         else {
             intent = new Intent(this,SimpleActivity.class);
