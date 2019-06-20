@@ -16,7 +16,7 @@ import com.zambezia.mathplusplus.R;
 class TextBound
 {
     public Rect rectButtonText;
-    public float buttonTextSize;
+    public float buttonTextSize; 
     public String buttonText;
     public Button button;
 }; 
