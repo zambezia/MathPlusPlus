@@ -1,6 +1,7 @@
 package com.zambezia.mathplusplus.Expression;
 
-import android.util.Pair;
+//import android.util.Pair;
+import android.support.v4.util.Pair;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -196,7 +197,7 @@ public class ExpressionEval {
 	    Stack<Pair<String,Integer>> stack = new Stack<Pair<String,Integer>>();
 	    ArrayList<Pair<String,Integer>> exp = new ArrayList<Pair<String,Integer>>();
 
-		Pair<String,Integer> token=null;
+		Pair<String,Integer> token=new Pair<String,Integer>("33",33);
 	    for (int index=0;index< expression.length ;index++)
 	    {
 			token = new Pair<String,Integer>(expression[index],index);

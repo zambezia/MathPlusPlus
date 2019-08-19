@@ -7,7 +7,8 @@ import java.util.List;
 import java.util.Stack;
 
 import android.util.Log;
-import android.util.Pair;
+//import android.util.Pair;
+import android.support.v4.util.Pair;
 
 public class CalcDebug {
 
