@@ -145,31 +145,12 @@ public class SimpleActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_scientific_calculator){
-            Intent intent = new Intent(this,ScientificActivity.class);
-            startActivity(intent);
-            PreferenceHelperSingleton.getInstance().setCurrentCalculatorType(CalculatorType.SCIENTIFIC);
-            finish();
-        }
-        else if (id == R.id.nav_smart_scientific_calculator)
+        if (id == R.id.nav_smart_scientific_calculator)
         {
             Intent intent = new Intent(this,SmartScientificActivity.class);
             startActivity(intent);
             PreferenceHelperSingleton.getInstance().setCurrentCalculatorType(CalculatorType.SMARTSCIENTIFIC);
             finish();
-        }
-        else if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
         }
 
         drawer.closeDrawer(GravityCompat.START);
