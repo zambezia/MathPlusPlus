@@ -1,13 +1,9 @@
 package com.zambezia.mathplusplus;
 
-import android.app.Application;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 
-import com.zambezia.mathplusplus.Controllers.Calculator;
-import com.zambezia.mathplusplus.Defs.CalculatorConstants;
 import com.zambezia.mathplusplus.Expression.ExpressionEval;
-import com.zambezia.mathplusplus.Views.IView;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,7 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
-import static org.junit.Assert.*;
 
 /**
  * To work on unit tests, switch the Test Artifact in the Build Variants view.

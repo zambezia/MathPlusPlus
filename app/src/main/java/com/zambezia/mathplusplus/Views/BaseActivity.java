@@ -1,14 +1,10 @@
 package com.zambezia.mathplusplus.Views;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
 
-import com.zambezia.mathplusplus.App;
 import com.zambezia.mathplusplus.CalculatorType;
-import com.zambezia.mathplusplus.R;
-import com.zambezia.mathplusplus.helper.PreferenceHelper;
 import com.zambezia.mathplusplus.singleton.PreferenceHelperSingleton;
 
 

@@ -1,29 +1,19 @@
 package com.zambezia.mathplusplus.Views;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.Rect;
 import android.os.Bundle;
-import android.os.Handler;
-import android.support.design.widget.FloatingActionButton;
-import android.text.method.ScrollingMovementMethod;
 import android.view.View;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.navigation.NavigationView;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.zambezia.mathplusplus.CalculatorType;
@@ -32,9 +22,6 @@ import com.zambezia.mathplusplus.Controllers.Calculator;
 import com.zambezia.mathplusplus.R;
 import com.zambezia.mathplusplus.helper.TextResizeHelper;
 import com.zambezia.mathplusplus.singleton.PreferenceHelperSingleton;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Main view of the app, hosts the calculator button commands and allow user to interact with Math
