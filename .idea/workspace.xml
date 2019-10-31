@@ -16,9 +16,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5de50dbe-eff8-485d-9f56-4e5936c6bb7d" name="Default" comment="work space changes on compile.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5de50dbe-eff8-485d-9f56-4e5936c6bb7d" name="Default" comment="work space changes." />
     <ignored path="Math++.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,7 +93,7 @@
         <counts>
           <entry key="gradle" value="61" />
           <entry key="java" value="9294" />
-          <entry key="txt" value="1539" />
+          <entry key="txt" value="1550" />
           <entry key="xml" value="4125" />
         </counts>
       </usages-collector>
@@ -103,7 +101,7 @@
         <counts>
           <entry key="Groovy" value="61" />
           <entry key="JAVA" value="9294" />
-          <entry key="PLAIN_TEXT" value="1539" />
+          <entry key="PLAIN_TEXT" value="1550" />
           <entry key="XML" value="4125" />
         </counts>
       </usages-collector>
@@ -3327,7 +3325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572520299383</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="work space changes.">
+      <created>1572520575115</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1572520575115</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -3505,7 +3510,8 @@
     <MESSAGE value="moved to androidx api level 28." />
     <MESSAGE value="admob support added." />
     <MESSAGE value="work space changes on compile." />
-    <option name="LAST_COMMIT_MESSAGE" value="work space changes on compile." />
+    <MESSAGE value="work space changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="work space changes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
