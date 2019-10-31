@@ -8,8 +8,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Views.ScientificActivity"
-    tools:showIn="@layout/app_bar_scientific">
+    tools:context=".Views.SmartScientificActivity"
+    tools:showIn="@layout/app_bar_smart_scientific">
 
 
     <HorizontalScrollView
@@ -28,9 +28,9 @@
         android:layout_height="30dp"
         android:background="@color/colorAccent"
         android:textColor="@color/colorText"
-        android:gravity="right|center_vertical"
+        android:gravity="end|center_vertical"
         android:text="0."
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:typeface="sans" />
 
     <LinearLayout
@@ -47,7 +47,7 @@
             android:textColor="@color/colorText"
             android:gravity="center_horizontal"
             android:text="DEG"
-            android:textSize="9dp"
+            android:textSize="9sp"
             android:typeface="sans" />
 
         <TextView
@@ -59,7 +59,7 @@
             android:textColor="@color/colorText"
             android:gravity="center_horizontal"
             android:text="M"
-            android:textSize="9dp"
+            android:textSize="9sp"
             android:typeface="sans" />
     </LinearLayout>
 
@@ -444,7 +444,6 @@
                     style="@style/SimpleButton" />
 
             </LinearLayout>
-
 
         </LinearLayout>
 

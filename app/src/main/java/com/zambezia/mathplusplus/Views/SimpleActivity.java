@@ -3,7 +3,12 @@ package com.zambezia.mathplusplus.Views;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.material.navigation.NavigationView;
+
+import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -33,6 +38,7 @@ import com.zambezia.mathplusplus.singleton.PreferenceHelperSingleton;
 public class SimpleActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, IView {
 
+    private AdView mAdView;
     private DrawerLayout drawer;
     private Button one, two, three, four, five, six, seven, eight, nine, zero, plus, minus, div, mul, equal, leftparentheses, rightparentheses, ac,
             point, backSpace, delete;
@@ -73,33 +79,28 @@ public class SimpleActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple);
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         //Calculator instance and UI code hooking
         init();
         SetListeners();
         calculator = new Calculator(this);
 
         //Setting up toolbar
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_simple);
+        Toolbar toolbar = findViewById(R.id.toolbar_simple);
         setSupportActionBar(toolbar);
 
-//        //Setting up FloatingActionButton
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                //TODO: Implement CLICK functionality
-//            }
-//        });
-
         //Setting up DrawerLayout and NavigationView
-        drawer = (DrawerLayout) findViewById(R.id.drawer_layout_simple);
+        drawer = findViewById(R.id.drawer_layout_simple);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
 
@@ -138,7 +139,7 @@ public class SimpleActivity extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
@@ -157,32 +158,32 @@ public class SimpleActivity extends AppCompatActivity
     public void init()
     {
 
-        one = (Button) findViewById(R.id.buttonOne);
-        two = (Button) findViewById(R.id.buttontwo);
-        three = (Button) findViewById(R.id.buttonThree);
-        four = (Button) findViewById(R.id.buttonFour);
-        five = (Button) findViewById(R.id.buttonFive);
-        six = (Button) findViewById(R.id.buttonSix);
-        seven = (Button) findViewById(R.id.buttonSeven);
-        eight = (Button) findViewById(R.id.buttonEight);
-        nine = (Button) findViewById(R.id.buttonNine);
-        zero = (Button) findViewById(R.id.buttonZero);
-        point = (Button) findViewById(R.id.buttonpoint);
-        plus = (Button) findViewById(R.id.buttonPlus);
-        minus = (Button) findViewById(R.id.buttonMinus);
-        mul = (Button) findViewById(R.id.buttonMul);
-        div = (Button) findViewById(R.id.buttonDiv);
-        equal = (Button) findViewById(R.id.buttonEqual);
-        leftparentheses = (Button) findViewById(R.id.buttonLeftparentheses);
-        rightparentheses = (Button) findViewById(R.id.buttonRightparentheses);
-        ac = (Button) findViewById(R.id.buttonClear);
+        one = findViewById(R.id.buttonOne);
+        two = findViewById(R.id.buttontwo);
+        three = findViewById(R.id.buttonThree);
+        four = findViewById(R.id.buttonFour);
+        five = findViewById(R.id.buttonFive);
+        six = findViewById(R.id.buttonSix);
+        seven = findViewById(R.id.buttonSeven);
+        eight = findViewById(R.id.buttonEight);
+        nine = findViewById(R.id.buttonNine);
+        zero = findViewById(R.id.buttonZero);
+        point = findViewById(R.id.buttonpoint);
+        plus = findViewById(R.id.buttonPlus);
+        minus = findViewById(R.id.buttonMinus);
+        mul = findViewById(R.id.buttonMul);
+        div = findViewById(R.id.buttonDiv);
+        equal = findViewById(R.id.buttonEqual);
+        leftparentheses = findViewById(R.id.buttonLeftparentheses);
+        rightparentheses = findViewById(R.id.buttonRightparentheses);
+        ac = findViewById(R.id.buttonClear);
 
-        input = (TextView) findViewById(R.id.modeTextView);
-        modeview = (TextView) findViewById(R.id.statusMemoryView);
-        output = (TextView) findViewById(R.id.consoleTextView);
-        horizontalScrollView = (HorizontalScrollView)findViewById(R.id.horizontalScrollView);
-        backSpace = (Button) findViewById(R.id.buttonBackSpace);
-        delete = (Button) findViewById(R.id.buttonDelete);
+        input = findViewById(R.id.modeTextView);
+        modeview = findViewById(R.id.statusMemoryView);
+        output = findViewById(R.id.consoleTextView);
+        horizontalScrollView = findViewById(R.id.horizontalScrollView);
+        backSpace = findViewById(R.id.buttonBackSpace);
+        delete = findViewById(R.id.buttonDelete);
     }
 
     public void SetListeners()
@@ -258,7 +259,7 @@ public class SimpleActivity extends AppCompatActivity
         if (b.getTag() != null)//Tag could be null for some buttons
             func = b.getTag().toString();
 
-        if (func == null || func == "")
+        if (func.equals(""))
             func = b.getText().toString();
 
         return func;
@@ -283,7 +284,7 @@ public class SimpleActivity extends AppCompatActivity
     @Override
     public double getDisplayOutputDouble() {
 
-        double val=0.0;
+        double val;
         try{
             val = Double.parseDouble(getDisplayOutputString());
         }

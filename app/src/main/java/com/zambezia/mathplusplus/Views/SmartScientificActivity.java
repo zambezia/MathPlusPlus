@@ -3,7 +3,12 @@ package com.zambezia.mathplusplus.Views;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.material.navigation.NavigationView;
+
+import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -33,6 +38,7 @@ import com.zambezia.mathplusplus.singleton.PreferenceHelperSingleton;
 public class SmartScientificActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, IView {
 
+    private AdView mAdView;
     private DrawerLayout drawer;
     private Button one, two, three, four, five, six, seven, eight, nine, zero, plus, minus, div, mul, equal,
             leftparentheses, rightparentheses,
@@ -86,35 +92,31 @@ public class SmartScientificActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_smart_scientific);
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         //Calculator instance and UI code hooking
         init();
         SetListeners();
         calculator = new Calculator(this);
 
         //Setting up toolbar
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_smart_scientific);
+        Toolbar toolbar = findViewById(R.id.toolbar_smart_scientific);
         setSupportActionBar(toolbar);
 
-//        //Setting up FloatingActionButton
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                //TODO: Implement CLICK functionality
-//            }
-//        });
-
         //Setting up DrawerLayout and NavigationView
-        drawer = (DrawerLayout) findViewById(R.id.drawer_layout_smart_scientific);
+        drawer = findViewById(R.id.drawer_layout_smart_scientific);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -150,7 +152,7 @@ public class SmartScientificActivity extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
@@ -167,61 +169,61 @@ public class SmartScientificActivity extends AppCompatActivity
     public void init()
     {
 
-        one = (Button) findViewById(R.id.buttonOne);
-        two = (Button) findViewById(R.id.buttontwo);
-        three = (Button) findViewById(R.id.buttonThree);
-        four = (Button) findViewById(R.id.buttonFour);
-        five = (Button) findViewById(R.id.buttonFive);
-        six = (Button) findViewById(R.id.buttonSix);
-        seven = (Button) findViewById(R.id.buttonSeven);
-        eight = (Button) findViewById(R.id.buttonEight);
-        nine = (Button) findViewById(R.id.buttonNine);
-        zero = (Button) findViewById(R.id.buttonZero);
-        point = (Button) findViewById(R.id.buttonpoint);
-        plus = (Button) findViewById(R.id.buttonPlus);
-        minus = (Button) findViewById(R.id.buttonMinus);
-        mul = (Button) findViewById(R.id.buttonMul);
-        div = (Button) findViewById(R.id.buttonDiv);
-        negation = (Button) findViewById(R.id.buttonNegation);
-        equal = (Button) findViewById(R.id.buttonEqual);
-        leftparentheses = (Button) findViewById(R.id.buttonLeftparentheses);
-        rightparentheses = (Button) findViewById(R.id.buttonRightparentheses);
-        square = (Button) findViewById(R.id.buttonSquare);
-        squareRoot = (Button) findViewById(R.id.buttonSquareRoot);
-        cubeRoot = (Button) findViewById(R.id.buttonCubeRoot);
-        quadRoot = (Button) findViewById(R.id.buttonQuadRoot);
-        nRoot = (Button) findViewById(R.id.buttonNRoot);
-        cube = (Button) findViewById(R.id.buttonCube);
-        ac = (Button) findViewById(R.id.buttonClear);
-        sin = (Button) findViewById(R.id.buttonSin);
-        cos = (Button) findViewById(R.id.buttonCos);
-        tan = (Button) findViewById(R.id.buttontan);
-        sinInv = (Button) findViewById(R.id.buttonSinInv);
-        cosInv = (Button) findViewById(R.id.buttonCosInv);
-        tanInv = (Button) findViewById(R.id.buttonTanInv);
-        sinH = (Button) findViewById(R.id.buttonSinH);
-        cosH = (Button) findViewById(R.id.buttonCosH);
-        tanH = (Button) findViewById(R.id.buttontanH);
-        sinHInv = (Button) findViewById(R.id.buttonSinHInv);
-        cosHInv = (Button) findViewById(R.id.buttonCosHInv);
-        tanHInv = (Button) findViewById(R.id.buttonTanHInv);
-        log = (Button) findViewById(R.id.buttonLog);
-        ln = (Button) findViewById(R.id.buttonLn);
-        pow = (Button) findViewById(R.id.buttonPow);
-        inv = (Button) findViewById(R.id.buttonInv);
-        trigMode = (Button) findViewById(R.id.buttonTrigMode);
-        pi = (Button) findViewById(R.id.buttonPI);
-        exp = (Button) findViewById(R.id.buttonExp);
-        _10ExpN = (Button) findViewById(R.id.button_10ExpN);
-        exp1 = (Button) findViewById(R.id.buttonExp1);
-        fact = (Button) findViewById(R.id.buttonFact);
-        backSpace = (Button) findViewById(R.id.buttonBackSpace);
-        delete = (Button) findViewById(R.id.buttonDelete);
-        input = (TextView) findViewById(R.id.modeTextView);
-        output = (TextView) findViewById(R.id.consoleTextView);
-        modeview = (TextView) findViewById(R.id.statusMemoryView);
-        trigonoModeView = (TextView)findViewById(R.id.trigonoModeView);
-        horizontalScrollView = (HorizontalScrollView)findViewById(R.id.horizontalScrollView);
+        one =  findViewById(R.id.buttonOne);
+        two =  findViewById(R.id.buttontwo);
+        three = findViewById(R.id.buttonThree);
+        four = findViewById(R.id.buttonFour);
+        five = findViewById(R.id.buttonFive);
+        six = findViewById(R.id.buttonSix);
+        seven = findViewById(R.id.buttonSeven);
+        eight = findViewById(R.id.buttonEight);
+        nine = findViewById(R.id.buttonNine);
+        zero = findViewById(R.id.buttonZero);
+        point = findViewById(R.id.buttonpoint);
+        plus = findViewById(R.id.buttonPlus);
+        minus = findViewById(R.id.buttonMinus);
+        mul = findViewById(R.id.buttonMul);
+        div = findViewById(R.id.buttonDiv);
+        negation = findViewById(R.id.buttonNegation);
+        equal = findViewById(R.id.buttonEqual);
+        leftparentheses = findViewById(R.id.buttonLeftparentheses);
+        rightparentheses = findViewById(R.id.buttonRightparentheses);
+        square = findViewById(R.id.buttonSquare);
+        squareRoot = findViewById(R.id.buttonSquareRoot);
+        cubeRoot = findViewById(R.id.buttonCubeRoot);
+        quadRoot = findViewById(R.id.buttonQuadRoot);
+        nRoot = findViewById(R.id.buttonNRoot);
+        cube = findViewById(R.id.buttonCube);
+        ac = findViewById(R.id.buttonClear);
+        sin = findViewById(R.id.buttonSin);
+        cos = findViewById(R.id.buttonCos);
+        tan = findViewById(R.id.buttontan);
+        sinInv = findViewById(R.id.buttonSinInv);
+        cosInv = findViewById(R.id.buttonCosInv);
+        tanInv = findViewById(R.id.buttonTanInv);
+        sinH = findViewById(R.id.buttonSinH);
+        cosH = findViewById(R.id.buttonCosH);
+        tanH = findViewById(R.id.buttontanH);
+        sinHInv = findViewById(R.id.buttonSinHInv);
+        cosHInv = findViewById(R.id.buttonCosHInv);
+        tanHInv = findViewById(R.id.buttonTanHInv);
+        log = findViewById(R.id.buttonLog);
+        ln = findViewById(R.id.buttonLn);
+        pow = findViewById(R.id.buttonPow);
+        inv = findViewById(R.id.buttonInv);
+        trigMode = findViewById(R.id.buttonTrigMode);
+        pi = findViewById(R.id.buttonPI);
+        exp = findViewById(R.id.buttonExp);
+        _10ExpN = findViewById(R.id.button_10ExpN);
+        exp1 = findViewById(R.id.buttonExp1);
+        fact = findViewById(R.id.buttonFact);
+        backSpace = findViewById(R.id.buttonBackSpace);
+        delete = findViewById(R.id.buttonDelete);
+        input = findViewById(R.id.modeTextView);
+        output = findViewById(R.id.consoleTextView);
+        modeview = findViewById(R.id.statusMemoryView);
+        trigonoModeView = findViewById(R.id.trigonoModeView);
+        horizontalScrollView = findViewById(R.id.horizontalScrollView);
     }
 
     public void SetListeners()
@@ -333,7 +335,7 @@ public class SmartScientificActivity extends AppCompatActivity
         if (b.getTag() != null)//Tag could be null for some buttons
             func = b.getTag().toString();
 
-        if (func == null || func == "")
+        if (func.equals(""))
             func = b.getText().toString();
 
         return func;
@@ -358,7 +360,7 @@ public class SmartScientificActivity extends AppCompatActivity
     @Override
     public double getDisplayOutputDouble() {
 
-        double val=0.0;
+        double val;
         try{
             val = Double.parseDouble(getDisplayOutputString());
         }

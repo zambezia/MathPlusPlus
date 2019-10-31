@@ -27,7 +27,7 @@
         android:layout_height="30dp"
         android:background="@color/colorAccent"
         android:textColor="@color/colorText"
-        android:gravity="right|center_vertical"
+        android:gravity="end|center_vertical"
         android:text="0."
         android:textSize="25dp"
         android:typeface="sans" />
@@ -46,7 +46,7 @@
             android:textColor="@color/colorText"
             android:gravity="center_horizontal"
             android:text=""
-            android:textSize="9dp"
+            android:textSize="9sp"
             android:typeface="sans" />
 
         <TextView
@@ -58,7 +58,7 @@
             android:textColor="@color/colorText"
             android:gravity="center_horizontal"
             android:text=""
-            android:textSize="9dp"
+            android:textSize="9sp"
             android:typeface="sans" />
     </LinearLayout>
 
@@ -186,6 +186,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/buttonNegation"
                 style="@style/SimpleButton"
@@ -208,5 +209,6 @@
         </LinearLayout>
 
     </LinearLayout>
+
 
 </LinearLayout>
