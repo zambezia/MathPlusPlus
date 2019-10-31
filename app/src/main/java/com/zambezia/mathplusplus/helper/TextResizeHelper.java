@@ -89,7 +89,10 @@ public class TextResizeHelper {
         textBoundLargestWidth.buttonTextSize = 0;
         textBoundLargestWidth.rectButtonText = rectButtonText;
         textBoundLargestWidth.buttonTextSize = buttonTextSizeWidest;
-        TextBound textBoundLargestHeight = textBoundLargestWidth;
+        TextBound textBoundLargestHeight = new TextBound();
+        textBoundLargestHeight.buttonTextSize = 0;
+        textBoundLargestHeight.rectButtonText = rectButtonText;
+        textBoundLargestHeight.buttonTextSize = buttonTextSizeHighest;
         getLargestButtonText(layout, textBoundLargestWidth, textBoundLargestHeight);
 
         float buttonWidth = textBoundLargestWidth.button.getWidth();
