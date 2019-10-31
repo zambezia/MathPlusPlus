@@ -16,7 +16,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5de50dbe-eff8-485d-9f56-4e5936c6bb7d" name="Default" comment="admob support added." />
+    <list default="true" id="5de50dbe-eff8-485d-9f56-4e5936c6bb7d" name="Default" comment="work space changes on compile.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="Math++.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,7 +95,7 @@
         <counts>
           <entry key="gradle" value="61" />
           <entry key="java" value="9294" />
-          <entry key="txt" value="1499" />
+          <entry key="txt" value="1539" />
           <entry key="xml" value="4125" />
         </counts>
       </usages-collector>
@@ -101,7 +103,7 @@
         <counts>
           <entry key="Groovy" value="61" />
           <entry key="JAVA" value="9294" />
-          <entry key="PLAIN_TEXT" value="1499" />
+          <entry key="PLAIN_TEXT" value="1539" />
           <entry key="XML" value="4125" />
         </counts>
       </usages-collector>
@@ -137,8 +139,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+            <state relative-caret-position="323">
+              <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -3318,7 +3320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572504268406</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="work space changes on compile.">
+      <created>1572520299383</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1572520299383</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -3379,7 +3388,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932885" weight="0.32697946" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4904051" weight="0.23692992" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.70872486" visible="true" weight="0.17302053" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.70872486" weight="0.17302053" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49653703" weight="0.25842696" />
@@ -3387,9 +3396,9 @@
       <window_info anchor="bottom" id="Gradle Console" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Android Profiler" order="9" sideWeight="0.49946696" weight="0.32925472" />
       <window_info anchor="bottom" id="Android Monitor" order="10" weight="0.32929516" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.1671141" side_tool="true" visible="true" weight="0.39149562" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.1671141" side_tool="true" weight="0.39149562" />
       <window_info anchor="bottom" id="Logcat" order="12" sideWeight="0.7137527" weight="0.487208" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4968017" weight="0.32703003" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" sideWeight="0.4968017" visible="true" weight="0.32703003" />
       <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.4978678" weight="0.32814237" />
       <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.49798658" weight="0.24926686" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -3495,7 +3504,8 @@
     <MESSAGE value="all changes were made to stop crash in junit testing. removed string.xml reference. added mockito added to handle logging class functions. Changed pair class to compat class." />
     <MESSAGE value="moved to androidx api level 28." />
     <MESSAGE value="admob support added." />
-    <option name="LAST_COMMIT_MESSAGE" value="admob support added." />
+    <MESSAGE value="work space changes on compile." />
+    <option name="LAST_COMMIT_MESSAGE" value="work space changes on compile." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3915,8 +3925,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zambezia/mathplusplus/Views/SmartScientificActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+        <state relative-caret-position="323">
+          <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
         </state>
       </provider>
     </entry>
